@@ -1,6 +1,6 @@
 repeat task.wait() until game:IsLoaded()
 if _G.Loaded then
-    print('Script Already Has Been Loaded.')
+    print('Updated config!')
     return
 end
 -- if not getgenv().directory then
