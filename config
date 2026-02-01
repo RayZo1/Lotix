@@ -2,7 +2,7 @@ getgenv().Underground = {
     Silent = {
         ["Enabled"] = (true), -- // Use The Silent Aim Or Not
         
-        ["Part"] = ("LeftHand"), -- // What Part It Targerts
+        ["Part"] = ("UpperTorso"), -- // What Part It Targerts
         ["UseAirPart"] = (false), -- // When Target Isnt On The Ground It Uses This Part
         ["AirPart"] = ("LowerTorso"), -- // The Parts It Targets On When Player Isnt On The Ground
         ["ClosestPart"] = (true), -- // Automatically Gets The Closest Part Of The Target And Uses That
@@ -38,7 +38,7 @@ getgenv().Underground = {
     GunFov = {
         ["Enabled"] = (true), -- // Gun Fov / Fov Is Automatically Changed To Specific Gun Equipped
     
-["Double-Barrel SG"] = {["Fov"] = 22}, -- // Db
+["Double-Barrel SG"] = {["Fov"] = 17}, -- // Db
         ["Revolver"] = {["Fov"] = 12}, -- // Rev
              ["SMG"] = {["Fov"] = 6.2}, -- // Smg
          ["Shotgun"] = {["Fov"] = 18}, -- // Shotgun
