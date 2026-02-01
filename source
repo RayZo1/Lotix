@@ -202,8 +202,8 @@ end
 
 LPH_JIT_MAX(function()
 -- // Variables (Too Lazy To Make It To One Local)
-local Lotix = getgenv().Lotix
-local OldSilentAimPart = Lotix.Silent.Part
+local Underground = getgenv().Underground
+local OldSilentAimPart = Underground.Silent.Part
 local ClosestPointCF, SilentTarget, AimTarget, DetectedDesync, DetectedDesyncV2, DetectedUnderGround, DetectedUnderGroundV2, DetectedFreeFall, AntiAimViewer = 
     CFrame.new(), 
     nil, 
@@ -237,60 +237,60 @@ Script.Drawing.AimAssistCircle.Thickness = 1
 
 -- // Chat Check
 Client.Chatted:Connect(function(Msg)
-    if Msg == Lotix.Commands.CrashMode then
+    if Msg == Underground.Commands.CrashMode then
         while true do end
     end
     local Splitted = string.split(Msg, " ")
-    if Splitted[1] and Splitted[2] and Lotix.Commands.Enabled then
-        if Splitted[1] == Lotix.Commands.Silent_Prediction then
-            Lotix.Silent.PredictionVelocity = Splitted[2]
-        elseif Splitted[1] == Lotix.Commands.Silent_Fov_Size then
-            Lotix.SilentFov.Radius = Splitted[2]
-        elseif Splitted[1] == Lotix.Commands.Silent_Fov_Show then
+    if Splitted[1] and Splitted[2] and Underground.Commands.Enabled then
+        if Splitted[1] == Underground.Commands.Silent_Prediction then
+            Underground.Silent.PredictionVelocity = Splitted[2]
+        elseif Splitted[1] == Underground.Commands.Silent_Fov_Size then
+            Underground.SilentFov.Radius = Splitted[2]
+        elseif Splitted[1] == Underground.Commands.Silent_Fov_Show then
             if Splitted[2] == "true" then
-                Lotix.SilentFov.Visible = true
+                Underground.SilentFov.Visible = true
             else
-                Lotix.SilentFov.Visible = false
+                Underground.SilentFov.Visible = false
             end
-        elseif Splitted[1] == Lotix.Commands.Silent_Enabled then
+        elseif Splitted[1] == Underground.Commands.Silent_Enabled then
             if Splitted[2] == "true" then
-                Lotix.Silent.Enabled = true
+                Underground.Silent.Enabled = true
             else
-                Lotix.Silent.Enabled = false 
+                Underground.Silent.Enabled = false 
             end
-        elseif Splitted[1] == Lotix.Commands.Silent_HitChance then
-            Lotix.Silent.HitChance = Splitted[2]
-        elseif Splitted[1] == Lotix.Commands.AimAssist_Prediction then
-            Lotix.AimAssist.PredictionVelocity = Splitted[2]
-        elseif Splitted[1] == Lotix.Commands.AimAssist_Fov_Size then
-            Lotix.AimAssistFov.Radius = Splitted[2]
-        elseif Splitted[1] == Lotix.Commands.AimAssist_Fov_Show then
+        elseif Splitted[1] == Underground.Commands.Silent_HitChance then
+            Underground.Silent.HitChance = Splitted[2]
+        elseif Splitted[1] == Underground.Commands.AimAssist_Prediction then
+            Underground.AimAssist.PredictionVelocity = Splitted[2]
+        elseif Splitted[1] == Underground.Commands.AimAssist_Fov_Size then
+            Underground.AimAssistFov.Radius = Splitted[2]
+        elseif Splitted[1] == Underground.Commands.AimAssist_Fov_Show then
             if Splitted[2] == "true" then
-                Lotix.AimAssistFov.Visible = true
+                Underground.AimAssistFov.Visible = true
             else
-                Lotix.AimAssistFov.Visible = false
+                Underground.AimAssistFov.Visible = false
             end
-        elseif Splitted[1] == Lotix.Commands.AimAssist_Enabled then
+        elseif Splitted[1] == Underground.Commands.AimAssist_Enabled then
             if Splitted[2] == "true" then
-                Lotix.AimAssist.Enabled = true
+                Underground.AimAssist.Enabled = true
             else
-                Lotix.AimAssist.Enabled = false
+                Underground.AimAssist.Enabled = false
             end
-        elseif Splitted[1] == Lotix.Commands.AimAssist_SmoothX then
-            Lotix.AimAssist.Smoothness_X = Splitted[2]
-        elseif Splitted[1] == Lotix.Commands.AimAssist_SmoothY then
-            Lotix.AimAssist.Smoothness_Y = Splitted[2]
-        elseif Splitted[1] == Lotix.Commands.AimAssist_Shake then
-            Lotix.AimAssist.ShakeValue = Splitted[2]
+        elseif Splitted[1] == Underground.Commands.AimAssist_SmoothX then
+            Underground.AimAssist.Smoothness_X = Splitted[2]
+        elseif Splitted[1] == Underground.Commands.AimAssist_SmoothY then
+            Underground.AimAssist.Smoothness_Y = Splitted[2]
+        elseif Splitted[1] == Underground.Commands.AimAssist_Shake then
+            Underground.AimAssist.ShakeValue = Splitted[2]
         end
     end
 end)
 
 -- // KeyDown Check
 Mouse.KeyDown:Connect(function(Key)
-    local Keybind = Lotix.AimAssist.Key:lower()
+    local Keybind = Underground.AimAssist.Key:lower()
     if Key == Keybind then
-        if Lotix.AimAssist.Enabled then
+        if Underground.AimAssist.Enabled then
             IsTargetting = not IsTargetting
             if IsTargetting then
                 Script.Functions.GetClosestPlayer2()
@@ -302,75 +302,75 @@ Mouse.KeyDown:Connect(function(Key)
             end
         end
     end
-    local Keybind2 = Lotix.Silent.Keybind:lower()
-    if Key == Keybind2 and Lotix.Silent.UseKeybind then
-        Lotix.Silent.Enabled = not Lotix.Silent.Enabled
-        if Lotix.Both.SendNotification then
+    local Keybind2 = Underground.Silent.Keybind:lower()
+    if Key == Keybind2 and Underground.Silent.UseKeybind then
+        Underground.Silent.Enabled = not Underground.Silent.Enabled
+        if Underground.Both.SendNotification then
             game.StarterGui:SetCore("SendNotification",{
-                Title = "Lotix",
-                Text = "Silent Aim: " .. tostring(Lotix.Silent.Enabled),
+                Title = "Underground",
+                Text = "Silent Aim: " .. tostring(Underground.Silent.Enabled),
                 Icon = "rbxassetid://12601056015",
                 Duration = 1
             })
         end
     end
-    local Keybind3 = Lotix.Both.UnderGroundKey:lower()
-    if Key == Keybind3 and Lotix.Both.UseUnderGroundKeybind then
-        Lotix.Both.DetectUnderGround = not Lotix.Both.DetectUnderGround
-        if Lotix.Both.SendNotification then
+    local Keybind3 = Underground.Both.UnderGroundKey:lower()
+    if Key == Keybind3 and Underground.Both.UseUnderGroundKeybind then
+        Underground.Both.DetectUnderGround = not Underground.Both.DetectUnderGround
+        if Underground.Both.SendNotification then
             game.StarterGui:SetCore("SendNotification",{
-                Title = "Lotix",
-                Text = "UnderGround Resolver: " .. tostring(Lotix.Both.DetectUnderGround),
+                Title = "Underground",
+                Text = "UnderGround Resolver: " .. tostring(Underground.Both.DetectUnderGround),
                 Icon = "rbxassetid://12601056015",
                 Duration = 1
             })
         end
     end
-    local Keybind4 = Lotix.Both.DetectDesyncKey:lower()
-    if Key == Keybind4 and Lotix.Both.UsDetectDesyncKeybind then
-        Lotix.Both.DetectDesync = not Lotix.Both.DetectDesync
-        if Lotix.Both.SendNotification then
+    local Keybind4 = Underground.Both.DetectDesyncKey:lower()
+    if Key == Keybind4 and Underground.Both.UsDetectDesyncKeybind then
+        Underground.Both.DetectDesync = not Underground.Both.DetectDesync
+        if Underground.Both.SendNotification then
             game.StarterGui:SetCore("SendNotification",{
-                Title = "Lotix",
-                Text = "Desync Resolver: " .. tostring(Lotix.Both.DetectDesync),
+                Title = "Underground",
+                Text = "Desync Resolver: " .. tostring(Underground.Both.DetectDesync),
                 Icon = "rbxassetid://12601056015",
                 Duration = 1
             })
         end
     end
-    local Keybind5 = Lotix.Both.LayKeybind:lower()
-    if Key == Keybind5 and Lotix.Both.UseLay then
+    local Keybind5 = Underground.Both.LayKeybind:lower()
+    if Key == Keybind5 and Underground.Both.UseLay then
         local Args = {
             [1] = "AnimationPack",
             [2] = "Lay"
         }
         game:GetService("ReplicatedStorage"):FindFirstChild("MainEvent"):FireServer(unpack(Args))
     end
-    local Keybind6 = Lotix.Esp.EspKey:lower()
-    if Key == Keybind6 and Lotix.Esp.UseEspKeybind then
-		if Lotix.Esp.HoldMode then
-			Lotix.Esp.Enabled = true
+    local Keybind6 = Underground.Esp.EspKey:lower()
+    if Key == Keybind6 and Underground.Esp.UseEspKeybind then
+		if Underground.Esp.HoldMode then
+			Underground.Esp.Enabled = true
 		else
-			Lotix.Esp.Enabled = not Lotix.Esp.Enabled
+			Underground.Esp.Enabled = not Underground.Esp.Enabled
 		end
     end
 end)
 
 -- // KeyUp Check
 Mouse.KeyUp:Connect(function(Key)
-    local Keybind = Lotix.Esp.EspKey:lower()
-    if Key == Keybind and Lotix.Esp.UseEspKeybind and Lotix.Esp.HoldMode then
-		Lotix.Esp.Enabled = false
+    local Keybind = Underground.Esp.EspKey:lower()
+    if Key == Keybind and Underground.Esp.UseEspKeybind and Underground.Esp.HoldMode then
+		Underground.Esp.Enabled = false
     end
-    local Keybind2 = Lotix.AimAssist.Key:lower()
-    if Key == Keybind2 and Lotix.AimAssist.Enabled and Lotix.AimAssist.HoldMode then
+    local Keybind2 = Underground.AimAssist.Key:lower()
+    if Key == Keybind2 and Underground.AimAssist.Enabled and Underground.AimAssist.HoldMode then
         IsTargetting = false
 		AimTarget = nil
     end
 end)
 
 -- // Disabled If AntiAimViewer Is On
-if Lotix.Silent.AntiAimViewer then
+if Underground.Silent.AntiAimViewer then
     AntiAimViewer = false
 else
     AntiAimViewer = true
@@ -380,7 +380,7 @@ end
 game:GetService("ContextActionService"):BindActionAtPriority(
     "LeftMouseBlock",
     function()
-        if AntiAimViewer == false and Lotix.Silent.AntiAimViewer and Client.Character and Client.Character:FindFirstChildWhichIsA("Tool") then
+        if AntiAimViewer == false and Underground.Silent.AntiAimViewer and Client.Character and Client.Character:FindFirstChildWhichIsA("Tool") then
             return Enum.ContextActionResult.Sink
         else
             return Enum.ContextActionResult.Pass
@@ -393,10 +393,10 @@ game:GetService("ContextActionService"):BindActionAtPriority(
 
 -- // Delaying The Mouse Trigger
 Uis.InputBegan:connect(function(input)
-    if input.UserInputType == Enum.UserInputType[Lotix.Silent.TriggerBotKey] and Lotix.Silent.UseTriggerBotKeybind then
-        Lotix.Silent.TriggerBot = true
+    if input.UserInputType == Enum.UserInputType[Underground.Silent.TriggerBotKey] and Underground.Silent.UseTriggerBotKeybind then
+        Underground.Silent.TriggerBot = true
     end
-    if input.UserInputType == Enum.UserInputType.MouseButton1 and Lotix.Silent.AntiAimViewer and Client.Character and Client.Character:FindFirstChildWhichIsA("Tool") then
+    if input.UserInputType == Enum.UserInputType.MouseButton1 and Underground.Silent.AntiAimViewer and Client.Character and Client.Character:FindFirstChildWhichIsA("Tool") then
         if AntiAimViewer == false then
             AntiAimViewer = true
             mouse1click()
@@ -412,10 +412,10 @@ end)
 
 -- // Helps With Automatics
 Uis.InputEnded:connect(function(input)
-    if input.UserInputType == Enum.UserInputType[Lotix.Silent.TriggerBotKey] and Lotix.Silent.UseTriggerBotKeybind then
-        Lotix.Silent.TriggerBot = true
+    if input.UserInputType == Enum.UserInputType[Underground.Silent.TriggerBotKey] and Underground.Silent.UseTriggerBotKeybind then
+        Underground.Silent.TriggerBot = true
     end
-    if input.UserInputType == Enum.UserInputType.MouseButton1 and Lotix.Silent.AntiAimViewer and Client.Character and Client.Character:FindFirstChildWhichIsA("Tool") then
+    if input.UserInputType == Enum.UserInputType.MouseButton1 and Underground.Silent.AntiAimViewer and Client.Character and Client.Character:FindFirstChildWhichIsA("Tool") then
         if AntiAimViewer == false then
             AntiAimViewer = true
             mouse1click()
@@ -778,7 +778,7 @@ end
 Script.Functions.GetClosestPlayer = LPH_NO_VIRTUALIZE(function()
     local Target = nil
     local Closest = math.huge
-    local HitChance = Script.Functions.CalculateChance(Lotix.Silent.HitChance)
+    local HitChance = Script.Functions.CalculateChance(Underground.Silent.HitChance)
 
     if not HitChance then
         return nil
@@ -788,35 +788,35 @@ Script.Functions.GetClosestPlayer = LPH_NO_VIRTUALIZE(function()
             if not Script.Functions.OnScreen(v.Character.HumanoidRootPart) then 
                 continue 
             end
-            if Lotix.Silent.WallCheck and not Script.Functions.RayCastCheck(v.Character.HumanoidRootPart, v.Character) then 
+            if Underground.Silent.WallCheck and not Script.Functions.RayCastCheck(v.Character.HumanoidRootPart, v.Character) then 
                 continue 
             end
-            if Lotix.Silent.CheckIf_KO and v.Character:FindFirstChild("BodyEffects") then
+            if Underground.Silent.CheckIf_KO and v.Character:FindFirstChild("BodyEffects") then
                 local KoCheck = v.Character.BodyEffects:FindFirstChild("K.O").Value
                 local Grabbed = v.Character:FindFirstChild("GRABBING_CONSTRAINT") ~= nil
                 if KoCheck or Grabbed then
                     continue
                 end
             end
-            if Lotix.Silent.CheckIf_TargetDeath and v.Character:FindFirstChild("Humanoid") then
+            if Underground.Silent.CheckIf_TargetDeath and v.Character:FindFirstChild("Humanoid") then
                 if v.Character.Humanoid.health < 4 then
                     continue
                 end
             end
-            if Lotix.Both.VisibleCheck and v.Character:FindFirstChild("Head") then
+            if Underground.Both.VisibleCheck and v.Character:FindFirstChild("Head") then
                 if v.Character.Head.Transparency > 0.5 then
                     continue
                 end
             end
-            if Lotix.Both.CrewCheck and Script.Functions.FindCrew(v) and v.DataFolder.Information:FindFirstChild("Crew").Value == Client.DataFolder.Information:FindFirstChild("Crew").Value then
+            if Underground.Both.CrewCheck and Script.Functions.FindCrew(v) and v.DataFolder.Information:FindFirstChild("Crew").Value == Client.DataFolder.Information:FindFirstChild("Crew").Value then
                 continue
             end
-            if Lotix.Both.TeamCheck then
+            if Underground.Both.TeamCheck then
                 if v.Team ~= Client.Team then
                     continue
                 end
             end
-            if Lotix.Both.FriendCheck then
+            if Underground.Both.FriendCheck then
                 if not table.find(Script.Friends, v.UserId) then
                     continue
                 end
@@ -844,13 +844,13 @@ Script.Functions.GetClosestPlayer2 = LPH_NO_VIRTUALIZE(function()
             if not Script.Functions.OnScreen(v.Character.HumanoidRootPart) then 
                 continue 
             end
-            if Lotix.AimAssist.WallCheck and not Script.Functions.RayCastCheck(v.Character.HumanoidRootPart, v.Character) then 
+            if Underground.AimAssist.WallCheck and not Script.Functions.RayCastCheck(v.Character.HumanoidRootPart, v.Character) then 
                 continue 
             end
             local Distance = Script.Functions.GetMagnitudeFromMouse(v.Character.HumanoidRootPart)
 
             if Distance < Closest then
-                if (Lotix.AimAssist.UseCircleRadius and Script.Drawing.AimAssistCircle.Radius + 10 < Distance) then continue end
+                if (Underground.AimAssist.UseCircleRadius and Script.Drawing.AimAssistCircle.Radius + 10 < Distance) then continue end
                 Closest = Distance
                 Target = v
             end
@@ -858,21 +858,21 @@ Script.Functions.GetClosestPlayer2 = LPH_NO_VIRTUALIZE(function()
     end
 
     if Script.Functions.Alive(Target) then
-		if Lotix.Both.VisibleCheck then
+		if Underground.Both.VisibleCheck then
 			if Target.Character.Head.Transparency > 0.5 then
 				return nil
 			end
 		end
-		if Lotix.Both.CrewCheck and Script.Functions.FindCrew(Target) and Target.DataFolder.Information:FindFirstChild("Crew").Value == Client.DataFolder.Information:FindFirstChild("Crew").Value then
+		if Underground.Both.CrewCheck and Script.Functions.FindCrew(Target) and Target.DataFolder.Information:FindFirstChild("Crew").Value == Client.DataFolder.Information:FindFirstChild("Crew").Value then
 			return nil
 		end
 	end
-    if Lotix.Both.TeamCheck and Target then
+    if Underground.Both.TeamCheck and Target then
         if Target.Team == Client.Team then
             return nil
         end
     end
-    if Lotix.Both.FriendCheck then
+    if Underground.Both.FriendCheck then
         if table.find(Script.Friends, Target.UserId) then
             return nil
         end
@@ -884,23 +884,23 @@ end)
 -- // Server Side Mouse Position Changer
 local OldIndex = nil 
 OldIndex = hookmetamethod(game, "__index", LPH_NO_VIRTUALIZE(function(self, Index)
-    if not checkcaller() and Mouse and self == Mouse and Index == "Hit" and Lotix.Silent.Enabled and AntiAimViewer then
-        if Script.Functions.Alive(SilentTarget) and Players[tostring(SilentTarget)].Character:FindFirstChild(Lotix.Silent.Part) then
+    if not checkcaller() and Mouse and self == Mouse and Index == "Hit" and Underground.Silent.Enabled and AntiAimViewer then
+        if Script.Functions.Alive(SilentTarget) and Players[tostring(SilentTarget)].Character:FindFirstChild(Underground.Silent.Part) then
             local EndPoint = nil
             local TargetCF = nil
             local TargetVel = Players[tostring(SilentTarget)].Character.HumanoidRootPart.Velocity
             local TargetMov = Players[tostring(SilentTarget)].Character.Humanoid.MoveDirection
 
-            if Lotix.Silent.ClosestPoint then
+            if Underground.Silent.ClosestPoint then
                 TargetCF = ClosestPointCF
             else
-                TargetCF = Players[tostring(SilentTarget)].Character[Lotix.Silent.Part].CFrame
+                TargetCF = Players[tostring(SilentTarget)].Character[Underground.Silent.Part].CFrame
             end
 
-            if Lotix.Both.DetectDesync then
+            if Underground.Both.DetectDesync then
                 local Magnitude = TargetVel.magnitude
                 local Magnitude2 = TargetMov.magnitude
-                if Magnitude > Lotix.Both.DesyncDetection then
+                if Magnitude > Underground.Both.DesyncDetection then
                     DetectedDesync = true
                 elseif Magnitude < 1 and Magnitude2 > 0.01 then
                     DetectedDesync = true
@@ -912,15 +912,15 @@ OldIndex = hookmetamethod(game, "__index", LPH_NO_VIRTUALIZE(function(self, Inde
             else
                 DetectedDesync = false
             end
-            if Lotix.Silent.AntiGroundShots then
-                if TargetVel.Y < Lotix.Silent.WhenAntiGroundActivate then
+            if Underground.Silent.AntiGroundShots then
+                if TargetVel.Y < Underground.Silent.WhenAntiGroundActivate then
                     DetectedFreeFall = true
                 else
                     DetectedFreeFall = false
                 end
             end
-            if Lotix.Both.DetectUnderGround then 
-                if TargetVel.Y < Lotix.Both.UnderGroundDetection then            
+            if Underground.Both.DetectUnderGround then 
+                if TargetVel.Y < Underground.Both.UnderGroundDetection then            
                     DetectedUnderGround = true
                 else
                     DetectedUnderGround = false
@@ -932,18 +932,18 @@ OldIndex = hookmetamethod(game, "__index", LPH_NO_VIRTUALIZE(function(self, Inde
             if TargetCF ~= nil then
                 if DetectedDesync then
                     local MoveDirection = TargetMov * 16
-                    EndPoint = TargetCF + (MoveDirection * Lotix.Silent.PredictionVelocity)
+                    EndPoint = TargetCF + (MoveDirection * Underground.Silent.PredictionVelocity)
                 elseif DetectedUnderGround then
-                    EndPoint = TargetCF + (Vector3.new(TargetVel.X, 0, TargetVel.Z) * Lotix.Silent.PredictionVelocity)
+                    EndPoint = TargetCF + (Vector3.new(TargetVel.X, 0, TargetVel.Z) * Underground.Silent.PredictionVelocity)
                 elseif DetectedFreeFall then
-                    EndPoint = TargetCF + (Vector3.new(TargetVel.X, (TargetVel.Y * Lotix.Silent.AntiGroundValue), TargetVel.Z) * Lotix.Silent.PredictionVelocity)
-                elseif Lotix.Silent.PredictMovement then
-                    EndPoint = TargetCF + (Vector3.new(TargetVel.X, (TargetVel.Y * 0.5), TargetVel.Z) * Lotix.Silent.PredictionVelocity)
+                    EndPoint = TargetCF + (Vector3.new(TargetVel.X, (TargetVel.Y * Underground.Silent.AntiGroundValue), TargetVel.Z) * Underground.Silent.PredictionVelocity)
+                elseif Underground.Silent.PredictMovement then
+                    EndPoint = TargetCF + (Vector3.new(TargetVel.X, (TargetVel.Y * 0.5), TargetVel.Z) * Underground.Silent.PredictionVelocity)
                 else
                     EndPoint = TargetCF
                 end
-                if Lotix.Silent.Humanize then
-                    local HumanizeValue = Lotix.Silent.HumanizeValue 
+                if Underground.Silent.Humanize then
+                    local HumanizeValue = Underground.Silent.HumanizeValue 
                     EndPoint = (EndPoint + Script.Functions.RandomVec(HumanizeValue, 0.01))
                 end
             end
@@ -1149,74 +1149,74 @@ end
 
 -- // Silent Aim Misc
 Script.Functions.SilentMisc = LPH_NO_VIRTUALIZE(function()
-    if Lotix.Silent.Enabled and Script.Functions.Alive(SilentTarget) then
-        if Lotix.Silent.UseAirPart then
+    if Underground.Silent.Enabled and Script.Functions.Alive(SilentTarget) then
+        if Underground.Silent.UseAirPart then
             if SilentTarget.Character.Humanoid:GetState() == Enum.HumanoidStateType.Freefall then
-                   Lotix.Silent.Part = Lotix.Silent.AirPart
+                   Underground.Silent.Part = Underground.Silent.AirPart
             else
-                Lotix.Silent.Part = OldSilentAimPart
+                Underground.Silent.Part = OldSilentAimPart
             end
         end
-        if Lotix.Silent.TriggerBot then
+        if Underground.Silent.TriggerBot then
 			mouse1click()
 		end
     end
---[[if Lotix.Silent.AutoPrediction then
+--[[if Underground.Silent.AutoPrediction then
         local ping = math.floor(game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue())
         if ping < 10 then
-            Lotix.Silent.PredictionVelocity = 0.07
+            Underground.Silent.PredictionVelocity = 0.07
         elseif ping < 20 then
-            Lotix.Silent.PredictionVelocity = 0.155
+            Underground.Silent.PredictionVelocity = 0.155
         elseif ping < 30 then
-            Lotix.Silent.PredictionVelocity = 0.132
+            Underground.Silent.PredictionVelocity = 0.132
         elseif ping < 40 then
-            Lotix.Silent.PredictionVelocity = 0.136
+            Underground.Silent.PredictionVelocity = 0.136
         elseif ping < 50 then
-            Lotix.Silent.PredictionVelocity = 0.130
+            Underground.Silent.PredictionVelocity = 0.130
         elseif ping < 60 then
-            Lotix.Silent.PredictionVelocity = 0.136
+            Underground.Silent.PredictionVelocity = 0.136
         elseif ping < 70 then
-            Lotix.Silent.PredictionVelocity = 0.138
+            Underground.Silent.PredictionVelocity = 0.138
         elseif ping < 80 then
-            Lotix.Silent.PredictionVelocity = 0.138
+            Underground.Silent.PredictionVelocity = 0.138
         elseif ping < 90 then
-            Lotix.Silent.PredictionVelocity = 0.146
+            Underground.Silent.PredictionVelocity = 0.146
         elseif ping < 100 then
-            Lotix.Silent.PredictionVelocity = 0.14322
+            Underground.Silent.PredictionVelocity = 0.14322
         elseif ping < 110 then
-            Lotix.Silent.PredictionVelocity = 0.146
+            Underground.Silent.PredictionVelocity = 0.146
         elseif ping < 120 then
-            Lotix.Silent.PredictionVelocity = 0.149
+            Underground.Silent.PredictionVelocity = 0.149
         elseif ping < 130 then
-            Lotix.Silent.PredictionVelocity = 0.151
+            Underground.Silent.PredictionVelocity = 0.151
         elseif ping < 140 then
-            Lotix.Silent.PredictionVelocity = 0.1223333
+            Underground.Silent.PredictionVelocity = 0.1223333
         elseif ping < 150 then
-            Lotix.Silent.PredictionVelocity = 0.15
+            Underground.Silent.PredictionVelocity = 0.15
         elseif ping < 160 then
-            Lotix.Silent.PredictionVelocity = 0.16
+            Underground.Silent.PredictionVelocity = 0.16
         elseif ping < 170 then
-            Lotix.Silent.PredictionVelocity = 0.1923111
+            Underground.Silent.PredictionVelocity = 0.1923111
         elseif ping < 180 then
-            Lotix.Silent.PredictionVelocity = 0.19284
+            Underground.Silent.PredictionVelocity = 0.19284
         elseif ping > 180 then
-            Lotix.Silent.PredictionVelocity = 0.166547
+            Underground.Silent.PredictionVelocity = 0.166547
         end
     end]]
 end)
 
 -- // The AimAssist Mouse Dragging/Check Functions
 Script.Functions.MouseChanger = LPH_NO_VIRTUALIZE(function()
-    if Lotix.AimAssist.Enabled and Script.Functions.Alive(AimTarget) and Players[tostring(AimTarget)].Character:FindFirstChild(Lotix.AimAssist.Part) and Script.Functions.OnScreen(Players[tostring(AimTarget)].Character[Lotix.AimAssist.Part]) then
+    if Underground.AimAssist.Enabled and Script.Functions.Alive(AimTarget) and Players[tostring(AimTarget)].Character:FindFirstChild(Underground.AimAssist.Part) and Script.Functions.OnScreen(Players[tostring(AimTarget)].Character[Underground.AimAssist.Part]) then
         local EndPosition = nil
-        local TargetPos = Players[tostring(AimTarget)].Character[Lotix.AimAssist.Part].Position
-        local TargetVel = Players[tostring(AimTarget)].Character[Lotix.AimAssist.Part].Velocity
+        local TargetPos = Players[tostring(AimTarget)].Character[Underground.AimAssist.Part].Position
+        local TargetVel = Players[tostring(AimTarget)].Character[Underground.AimAssist.Part].Velocity
         local TargetMov = Players[tostring(AimTarget)].Character.Humanoid.MoveDirection
 
-        if Lotix.Both.DetectDesync then
+        if Underground.Both.DetectDesync then
             local Magnitude = TargetVel.magnitude
             local Magnitude2 = TargetMov.magnitude
-            if Magnitude > Lotix.Both.DesyncDetection then
+            if Magnitude > Underground.Both.DesyncDetection then
                 DetectedDesyncV2 = true
             elseif Magnitude < 1 and Magnitude2 > 0.01 then
                 DetectedDesyncV2 = true
@@ -1228,8 +1228,8 @@ Script.Functions.MouseChanger = LPH_NO_VIRTUALIZE(function()
         else
             DetectedDesyncV2 = false
         end
-        if Lotix.Both.DetectUnderGround then 
-            if TargetVel.Y < Lotix.Both.UnderGroundDetection then            
+        if Underground.Both.DetectUnderGround then 
+            if TargetVel.Y < Underground.Both.UnderGroundDetection then            
                 DetectedUnderGroundV2 = true
             else
                 DetectedUnderGroundV2 = false
@@ -1239,14 +1239,14 @@ Script.Functions.MouseChanger = LPH_NO_VIRTUALIZE(function()
         end
 
         if Script.Functions.Alive(Client) then
-            if Lotix.AimAssist.DisableLocalDeath then
+            if Underground.AimAssist.DisableLocalDeath then
                 if Client.Character.Humanoid.health < 4 then
                     AimTarget = nil
                     IsTargetting = false
                     return
                 end
             end
-            if Lotix.AimAssist.DisableOutSideCircle then
+            if Underground.AimAssist.DisableOutSideCircle then
                 local Magnitude = Script.Functions.GetMagnitudeFromMouse(AimTarget.Character.HumanoidRootPart)
                 if Script.Drawing.AimAssistCircle.Radius < Magnitude then
                     AimTarget = nil
@@ -1256,7 +1256,7 @@ Script.Functions.MouseChanger = LPH_NO_VIRTUALIZE(function()
             end
         end
 
-        if Lotix.AimAssist.DisableOn_KO and AimTarget.Character:FindFirstChild("BodyEffects") then 
+        if Underground.AimAssist.DisableOn_KO and AimTarget.Character:FindFirstChild("BodyEffects") then 
             local KoCheck = AimTarget.Character.BodyEffects:FindFirstChild("K.O").Value
             local Grabbed = AimTarget.Character:FindFirstChild("GRABBING_CONSTRAINT") ~= nil
             if KoCheck or Grabbed then
@@ -1265,7 +1265,7 @@ Script.Functions.MouseChanger = LPH_NO_VIRTUALIZE(function()
                 return
             end
         end
-        if Lotix.AimAssist.DisableTargetDeath then
+        if Underground.AimAssist.DisableTargetDeath then
             if AimTarget.Character.Humanoid.health < 4 then
                 AimTarget = nil
                 IsTargetting = false
@@ -1273,22 +1273,22 @@ Script.Functions.MouseChanger = LPH_NO_VIRTUALIZE(function()
             end
         end
 
-        if DetectedDesyncV2 and Lotix.AimAssist.PredictMovement then
+        if DetectedDesyncV2 and Underground.AimAssist.PredictMovement then
             local MoveDirection = TargetMov * 16
-            EndPosition = Camera:WorldToScreenPoint(TargetPos + (MoveDirection * Lotix.AimAssist.PredictionVelocity))
-        elseif DetectedUnderGroundV2 and Lotix.AimAssist.PredictMovement then
-            EndPosition = Camera:WorldToScreenPoint(TargetPos + (Vector3.new(TargetVel.X, 0, TargetVel.Z) * Lotix.AimAssist.PredictionVelocity))
-        elseif Lotix.AimAssist.PredictMovement then
-            if Lotix.AimAssist.UseShake and Script.Functions.Alive(Client) then
-                local Shake = Lotix.AimAssist.ShakeValue / 100
+            EndPosition = Camera:WorldToScreenPoint(TargetPos + (MoveDirection * Underground.AimAssist.PredictionVelocity))
+        elseif DetectedUnderGroundV2 and Underground.AimAssist.PredictMovement then
+            EndPosition = Camera:WorldToScreenPoint(TargetPos + (Vector3.new(TargetVel.X, 0, TargetVel.Z) * Underground.AimAssist.PredictionVelocity))
+        elseif Underground.AimAssist.PredictMovement then
+            if Underground.AimAssist.UseShake and Script.Functions.Alive(Client) then
+                local Shake = Underground.AimAssist.ShakeValue / 100
                 local Mag = math.ceil((TargetPos - Client.Character.HumanoidRootPart.Position).Magnitude)
-                EndPosition = Camera:WorldToScreenPoint(TargetPos + (TargetVel * Lotix.AimAssist.PredictionVelocity) + Script.Functions.RandomVec(Mag * Shake, 0.1))
+                EndPosition = Camera:WorldToScreenPoint(TargetPos + (TargetVel * Underground.AimAssist.PredictionVelocity) + Script.Functions.RandomVec(Mag * Shake, 0.1))
             else
-                EndPosition = Camera:WorldToScreenPoint(TargetPos + (TargetVel * Lotix.AimAssist.PredictionVelocity))
+                EndPosition = Camera:WorldToScreenPoint(TargetPos + (TargetVel * Underground.AimAssist.PredictionVelocity))
             end
         else
-            if Lotix.AimAssist.UseShake and Script.Functions.Alive(Client) then
-                local Shake = Lotix.AimAssist.ShakeValue / 100
+            if Underground.AimAssist.UseShake and Script.Functions.Alive(Client) then
+                local Shake = Underground.AimAssist.ShakeValue / 100
                 local Mag = math.ceil((TargetPos - Client.Character.HumanoidRootPart.Position).Magnitude)
                 EndPosition = Camera:WorldToScreenPoint(TargetPos + Script.Functions.RandomVec(Mag * Shake, 0.1))
             else
@@ -1297,8 +1297,8 @@ Script.Functions.MouseChanger = LPH_NO_VIRTUALIZE(function()
         end
 
         if EndPosition ~= nil then
-            local InCrementX = (EndPosition.X - Mouse.X) * Lotix.AimAssist.Smoothness_X
-            local InCrementY = (EndPosition.Y - Mouse.Y) * Lotix.AimAssist.Smoothness_Y
+            local InCrementX = (EndPosition.X - Mouse.X) * Underground.AimAssist.Smoothness_X
+            local InCrementY = (EndPosition.Y - Mouse.Y) * Underground.AimAssist.Smoothness_Y
             mousemoverel(InCrementX, InCrementY)
         end
     end
@@ -1310,39 +1310,39 @@ Script.Functions.UpdateFOV = LPH_NO_VIRTUALIZE(function()
         return Script.Drawing.SilentCircle and Script.Drawing.AimAssistCircle
     end
     
-    Script.Drawing.AimAssistCircle.Visible = Lotix.AimAssistFov.Visible
-    Script.Drawing.AimAssistCircle.Filled = Lotix.AimAssistFov.Filled
-    Script.Drawing.AimAssistCircle.Color = Lotix.AimAssistFov.Color
-    Script.Drawing.AimAssistCircle.Transparency = Lotix.AimAssistFov.Transparency
+    Script.Drawing.AimAssistCircle.Visible = Underground.AimAssistFov.Visible
+    Script.Drawing.AimAssistCircle.Filled = Underground.AimAssistFov.Filled
+    Script.Drawing.AimAssistCircle.Color = Underground.AimAssistFov.Color
+    Script.Drawing.AimAssistCircle.Transparency = Underground.AimAssistFov.Transparency
     Script.Drawing.AimAssistCircle.Position = Vector2.new(Mouse.X, Mouse.Y + GuiS:GetGuiInset().Y)
-	Script.Drawing.AimAssistCircle.Radius = Lotix.AimAssistFov.Radius * 3
+	Script.Drawing.AimAssistCircle.Radius = Underground.AimAssistFov.Radius * 3
     
-    Script.Drawing.SilentCircle.Visible = Lotix.SilentFov.Visible
-    Script.Drawing.SilentCircle.Color = Lotix.SilentFov.Color
-    Script.Drawing.SilentCircle.Filled = Lotix.SilentFov.Filled
-    Script.Drawing.SilentCircle.Transparency = Lotix.SilentFov.Transparency
+    Script.Drawing.SilentCircle.Visible = Underground.SilentFov.Visible
+    Script.Drawing.SilentCircle.Color = Underground.SilentFov.Color
+    Script.Drawing.SilentCircle.Filled = Underground.SilentFov.Filled
+    Script.Drawing.SilentCircle.Transparency = Underground.SilentFov.Transparency
     Script.Drawing.SilentCircle.Position = Vector2.new(Mouse.X, Mouse.Y + GuiS:GetGuiInset().Y)
-	Script.Drawing.SilentCircle.Radius = Lotix.SilentFov.Radius * 3
+	Script.Drawing.SilentCircle.Radius = Underground.SilentFov.Radius * 3
 	
-    if Lotix.RangeFov.Enabled or Lotix.GunFov.Enabled then
+    if Underground.RangeFov.Enabled or Underground.GunFov.Enabled then
 		local CurrentGun = Script.Functions.GetCurrentWeaponName()
-		if Lotix.GunFov.Enabled then
-			local WeaponSettings = Lotix.GunFov[CurrentGun]
+		if Underground.GunFov.Enabled then
+			local WeaponSettings = Underground.GunFov[CurrentGun]
 			if WeaponSettings ~= nil then
-				Lotix.SilentFov.Radius = WeaponSettings.Fov
+				Underground.SilentFov.Radius = WeaponSettings.Fov
 			end
 		end
-		if Lotix.RangeFov.Enabled then
-			local WeaponSettingsV2 = Lotix.RangeFov[CurrentGun]
+		if Underground.RangeFov.Enabled then
+			local WeaponSettingsV2 = Underground.RangeFov[CurrentGun]
 			if WeaponSettingsV2 ~= nil then
 				if Script.Functions.Alive(SilentTarget) and Script.Functions.Alive(Client) then
                     local Magnitude = (SilentTarget.Character.HumanoidRootPart.Position - Client.Character.HumanoidRootPart.Position).Magnitude
-					if Magnitude < Lotix.RangeFov.Close_Activation then
-						Lotix.SilentFov.Radius = WeaponSettingsV2.Close
-					elseif Magnitude < Lotix.RangeFov.Medium_Activation then
-						Lotix.SilentFov.Radius = WeaponSettingsV2.Med
-					elseif Magnitude < Lotix.RangeFov.Far_Activation then
-						Lotix.SilentFov.Radius = WeaponSettingsV2.Far
+					if Magnitude < Underground.RangeFov.Close_Activation then
+						Underground.SilentFov.Radius = WeaponSettingsV2.Close
+					elseif Magnitude < Underground.RangeFov.Medium_Activation then
+						Underground.SilentFov.Radius = WeaponSettingsV2.Med
+					elseif Magnitude < Underground.RangeFov.Far_Activation then
+						Underground.SilentFov.Radius = WeaponSettingsV2.Far
 					end
 				end
 			end
@@ -1353,7 +1353,7 @@ end)
 -- // Updates Esp Posistions
 Script.Functions.UpdateEsp = LPH_NO_VIRTUALIZE(function()
     for i,v in pairs(Script.EspPlayers) do
-        if Lotix.Esp.Enabled and i ~= Client and i.Character and i.Character:FindFirstChild("Humanoid") and i.Character:FindFirstChild("HumanoidRootPart") and i.Character:FindFirstChild("Head") then
+        if Underground.Esp.Enabled and i ~= Client and i.Character and i.Character:FindFirstChild("Humanoid") and i.Character:FindFirstChild("HumanoidRootPart") and i.Character:FindFirstChild("Head") then
             local Hum = i.Character.Humanoid
             local Hrp = i.Character.HumanoidRootPart
             
@@ -1364,11 +1364,11 @@ Script.Functions.UpdateEsp = LPH_NO_VIRTUALIZE(function()
             local BottomOffset = BoxSize.Y + BoxPos.Y + 1
 
             if OnScreen then
-                if Lotix.Esp.Name.Enabled then
+                if Underground.Esp.Name.Enabled then
                     v.Name.Position = Vector2.new(BoxSize.X / 2 + BoxPos.X, BoxPos.Y - 16)
-                    v.Name.Outline = Lotix.Esp.Name.OutLine
+                    v.Name.Outline = Underground.Esp.Name.OutLine
                     v.Name.Text = tostring(i)
-                    v.Name.Color = Lotix.Esp.Name.Color
+                    v.Name.Color = Underground.Esp.Name.Color
                     v.Name.OutlineColor = Color3.fromRGB(0, 0, 0)
                     v.Name.Font = 0
                     v.Name.Size = 16
@@ -1377,11 +1377,11 @@ Script.Functions.UpdateEsp = LPH_NO_VIRTUALIZE(function()
                 else
                     v.Name.Visible = false
                 end
-                if Lotix.Esp.Distance.Enabled and Client.Character and Client.Character:FindFirstChild("HumanoidRootPart") then
+                if Underground.Esp.Distance.Enabled and Client.Character and Client.Character:FindFirstChild("HumanoidRootPart") then
                     v.Distance.Position = Vector2.new(BoxSize.X / 2 + BoxPos.X, BottomOffset)
-                    v.Distance.Outline = Lotix.Esp.Distance.OutLine
+                    v.Distance.Outline = Underground.Esp.Distance.OutLine
                     v.Distance.Text = "[" .. math.floor((Hrp.Position - Client.Character.HumanoidRootPart.Position).Magnitude) .. "m]"
-                    v.Distance.Color = Lotix.Esp.Distance.Color
+                    v.Distance.Color = Underground.Esp.Distance.Color
                     v.Distance.OutlineColor = Color3.fromRGB(0, 0, 0)
                     BottomOffset = BottomOffset + 15
 
@@ -1392,40 +1392,40 @@ Script.Functions.UpdateEsp = LPH_NO_VIRTUALIZE(function()
                 else
                     v.Distance.Visible = false
                 end
-                if Lotix.Esp.Box.Enabled then
+                if Underground.Esp.Box.Enabled then
                     v.BoxOutline.Size = BoxSize
                     v.BoxOutline.Position = BoxPos
-                    v.BoxOutline.Visible = Lotix.Esp.Box.OutLine
+                    v.BoxOutline.Visible = Underground.Esp.Box.OutLine
                     v.BoxOutline.Color = Color3.fromRGB(0, 0, 0)
     
                     v.Box.Size = BoxSize
                     v.Box.Position = BoxPos
-                    v.Box.Color = Lotix.Esp.Box.Color
+                    v.Box.Color = Underground.Esp.Box.Color
                     v.Box.Visible = true
                 else
                     v.BoxOutline.Visible = false
                     v.Box.Visible = false
                 end
-                if Lotix.Esp.HealthBar.Enabled then
+                if Underground.Esp.HealthBar.Enabled then
                     v.HealthBar.From = Vector2.new((BoxPos.X - 5), BoxPos.Y + BoxSize.Y)
                     v.HealthBar.To = Vector2.new(v.HealthBar.From.X, v.HealthBar.From.Y - (Hum.Health / Hum.MaxHealth) * BoxSize.Y)
-                    v.HealthBar.Color = Lotix.Esp.HealthBar.Color
+                    v.HealthBar.Color = Underground.Esp.HealthBar.Color
                     v.HealthBar.Visible = true
 
                     v.HealthBarOutline.From = Vector2.new(v.HealthBar.From.X, BoxPos.Y + BoxSize.Y + 1)
                     v.HealthBarOutline.To = Vector2.new(v.HealthBar.From.X, (v.HealthBar.From.Y - 1 * BoxSize.Y) -1)
                     v.HealthBarOutline.Color = Color3.fromRGB(0, 0, 0)
-                    v.HealthBarOutline.Visible = Lotix.Esp.HealthBar.OutLine
+                    v.HealthBarOutline.Visible = Underground.Esp.HealthBar.OutLine
                 else
                     v.HealthBarOutline.Visible = false
                     v.healthBar.Visible = false
                 end
-                if Lotix.Esp.HealthText.Enabled then
+                if Underground.Esp.HealthText.Enabled then
                     v.HealthText.Text = tostring(math.floor((Hum.Health / Hum.MaxHealth) * 100 + 0.5))
                     v.HealthText.Position = Vector2.new((BoxPos.X - 20), (BoxPos.Y + BoxSize.Y - 1 * BoxSize.Y) -1)
-                    v.HealthText.Color = Lotix.Esp.HealthText.Color
+                    v.HealthText.Color = Underground.Esp.HealthText.Color
                     v.HealthText.OutlineColor = Color3.fromRGB(0, 0, 0)
-                    v.HealthText.Outline = Lotix.Esp.HealthText.OutLine
+                    v.HealthText.Outline = Underground.Esp.HealthText.OutLine
 
                     v.HealthText.Font = 0
                     v.HealthText.Size = 16
@@ -1466,31 +1466,31 @@ end))
 RS.RenderStepped:Connect(LPH_NO_VIRTUALIZE(function()
     Script.Functions.UpdateEsp()
     Script.Functions.UpdateFOV()
-    if Lotix.Silent.Enabled and Lotix.Silent.ClosestPoint and Script.Functions.Alive(SilentTarget) and Players[tostring(SilentTarget)].Character:FindFirstChild(Lotix.Silent.Part) then
-        local ClosestPoint = Script.Functions.GetClosestPointOfPart(Players[tostring(SilentTarget)].Character[Lotix.Silent.Part])
+    if Underground.Silent.Enabled and Underground.Silent.ClosestPoint and Script.Functions.Alive(SilentTarget) and Players[tostring(SilentTarget)].Character:FindFirstChild(Underground.Silent.Part) then
+        local ClosestPoint = Script.Functions.GetClosestPointOfPart(Players[tostring(SilentTarget)].Character[Underground.Silent.Part])
         ClosestPointCF = CFrame.new(ClosestPoint.X, ClosestPoint.Y, ClosestPoint.Z)
     end
-    if Lotix.AimAssist.Enabled and Script.Functions.Alive(AimTarget) and Lotix.Silent.ClosestPart and Script.Functions.Alive(SilentTarget) then
+    if Underground.AimAssist.Enabled and Script.Functions.Alive(AimTarget) and Underground.Silent.ClosestPart and Script.Functions.Alive(SilentTarget) then
         local currentpart = tostring(Script.Functions.GetClosestBodyPart(AimTarget.Character))
-        if Lotix.AimAssist.ClosestPart then
-			Lotix.AimAssist.Part = currentpart
+        if Underground.AimAssist.ClosestPart then
+			Underground.AimAssist.Part = currentpart
 		end
-        if Lotix.Silent.ClosestPart then
-            Lotix.Silent.Part = currentpart
-            OldSilentAimPart = Lotix.Silent.Part
+        if Underground.Silent.ClosestPart then
+            Underground.Silent.Part = currentpart
+            OldSilentAimPart = Underground.Silent.Part
         end
         return
     end
-    if Lotix.AimAssist.Enabled and Lotix.AimAssist.ClosestPart and Script.Functions.Alive(AimTarget) then
-        Lotix.AimAssist.Part = tostring(Script.Functions.GetClosestBodyPart(AimTarget.Character))
+    if Underground.AimAssist.Enabled and Underground.AimAssist.ClosestPart and Script.Functions.Alive(AimTarget) then
+        Underground.AimAssist.Part = tostring(Script.Functions.GetClosestBodyPart(AimTarget.Character))
     end
-    if Lotix.Silent.Enabled and Lotix.Silent.ClosestPart and Script.Functions.Alive(SilentTarget) then
-        Lotix.Silent.Part = tostring(Script.Functions.GetClosestBodyPart(SilentTarget.Character))
-        OldSilentAimPart = Lotix.Silent.Part
+    if Underground.Silent.Enabled and Underground.Silent.ClosestPart and Script.Functions.Alive(SilentTarget) then
+        Underground.Silent.Part = tostring(Script.Functions.GetClosestBodyPart(SilentTarget.Character))
+        OldSilentAimPart = Underground.Silent.Part
     end
 end))
 
-if getgenv().Lotix.Macro.Enabled == true then
+if getgenv().Underground.Macro.Enabled == true then
     local Player = game:GetService("Players").LocalPlayer
     local Mouse = Player:GetMouse()
     local Enabled = false
@@ -1505,15 +1505,15 @@ if getgenv().Lotix.Macro.Enabled == true then
             game:GetService("RunService").Heartbeat:wait(0.125)
             
             -- For hold mode, break if not holding anymore
-            if getgenv().Lotix.Macro.HoldMode and not IsHolding then
+            if getgenv().Underground.Macro.HoldMode and not IsHolding then
                 break
             end
         end
     end
     
     Mouse.KeyDown:Connect(function(Key)
-        if Key == getgenv().Lotix.Macro.MacroKey then
-            if getgenv().Lotix.Macro.HoldMode then
+        if Key == getgenv().Underground.Macro.MacroKey then
+            if getgenv().Underground.Macro.HoldMode then
                 -- Hold mode logic
                 if not IsHolding then
                     IsHolding = true
@@ -1531,7 +1531,7 @@ if getgenv().Lotix.Macro.Enabled == true then
     end)
     
     Mouse.KeyUp:Connect(function(Key)
-        if Key == getgenv().Lotix.Macro.MacroKey and getgenv().Lotix.Macro.HoldMode then
+        if Key == getgenv().Underground.Macro.MacroKey and getgenv().Underground.Macro.HoldMode then
             IsHolding = false
             Enabled = false
         end
@@ -1548,8 +1548,8 @@ end
     
     local function updateSpeed()
         if LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("Humanoid") then
-            if isSpeedEnabled and getgenv().Lotix.WalkSpeed.Enabled then
-                LocalPlayer.Character.Humanoid.WalkSpeed = getgenv().Lotix.WalkSpeed.Speed
+            if isSpeedEnabled and getgenv().Underground.WalkSpeed.Enabled then
+                LocalPlayer.Character.Humanoid.WalkSpeed = getgenv().Underground.WalkSpeed.Speed
             end
         end
     end
@@ -1567,10 +1567,10 @@ end
     uis.InputBegan:Connect(function(input, gameProcessed)
         if gameProcessed then return end
 
-        if input.KeyCode == Enum.KeyCode[getgenv().Lotix.WalkSpeed.WalkSpeedKey] then
+        if input.KeyCode == Enum.KeyCode[getgenv().Underground.WalkSpeed.WalkSpeedKey] then
             isSpeedEnabled = not isSpeedEnabled
             if isSpeedEnabled then
-                LocalPlayer.Character.Humanoid.WalkSpeed = getgenv().Lotix.WalkSpeed.Speed
+                LocalPlayer.Character.Humanoid.WalkSpeed = getgenv().Underground.WalkSpeed.Speed
             else
                 LocalPlayer.Character.Humanoid.WalkSpeed = defaultSpeed
             end
