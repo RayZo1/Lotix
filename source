@@ -1,3 +1,5 @@
+local Loaded = false
+if Loaded == true then return end
 -- if not getgenv().directory then
 --     game.Players.LocalPlayer:Kick("Script directory was not found!\nNOTE: THE SERVER MAY BE DOWN \nplease dm 1catlol if you have entered yours correctly")
 --     wait(3)
@@ -1602,5 +1604,5 @@ Players.PlayerRemoving:Connect(function(Player)
     end
     Script.EspPlayers[Player] = nil
 end)
-
 end)()
+Loaded = true
