@@ -36,7 +36,7 @@ getgenv().Underground = {
         ["Keybind"] = (";") -- // The Keybind That Enables / Disables The Silent Aim
     },
     GunFov = {
-        ["Enabled"] = (false), -- // Gun Fov / Fov Is Automatically Changed To Specific Gun Equipped
+        ["Enabled"] = (true), -- // Gun Fov / Fov Is Automatically Changed To Specific Gun Equipped
     
 ["Double-Barrel SG"] = {["Fov"] = 17}, -- // Db
         ["Revolver"] = {["Fov"] = 12}, -- // Rev
@@ -50,7 +50,7 @@ getgenv().Underground = {
         -- // You Can Add Custom Weapons If You Want To :p
     },
     RangeFov = {
-        ["Enabled"] = (true), -- // Gun Fov / Fov Is Automatically Changed To Specific Distance Between Target / This Will OverWrite GunFov
+        ["Enabled"] = (false), -- // Gun Fov / Fov Is Automatically Changed To Specific Distance Between Target / This Will OverWrite GunFov
         
         ["Far_Activation"] = (300), -- // Just Keep It At Math.Huge
         ["Medium_Activation"] = (100), -- // Its Using Studs
