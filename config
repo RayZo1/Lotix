@@ -169,7 +169,7 @@ getgenv().Lotix = {
     },
 
     WalkSpeed = {
-    ["Enabled"] = (true), -- // Enabel / Disable Macro
+    ["Enabled"] = (false), -- // Enabel / Disable Macro
     ["WalkSpeedKey"] = ("V"), -- // KeyBind
     ["Speed"] = (125), -- // KeyBind
     }
