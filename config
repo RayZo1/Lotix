@@ -2,7 +2,7 @@ getgenv().Underground = {
     Silent = {
         ["Enabled"] = (true), -- // Use The Silent Aim Or Not
         
-        ["Part"] = ("UpperTorso"), -- // What Part It Targerts
+        ["Part"] = ("LeftHand"), -- // What Part It Targerts
         ["UseAirPart"] = (false), -- // When Target Isnt On The Ground It Uses This Part
         ["AirPart"] = ("LowerTorso"), -- // The Parts It Targets On When Player Isnt On The Ground
         ["ClosestPart"] = (true), -- // Automatically Gets The Closest Part Of The Target And Uses That
@@ -10,8 +10,8 @@ getgenv().Underground = {
         
         ["HitChance"] = (100), -- // The Chance You Will Hit The Target
         
-        ["Humanize"] = (false), -- // Makes Soo The Silent Doesnt Hit The Same Position
-        ["HumanizeValue"] = (2), -- // Makes How Much Power It Changes
+        ["Humanize"] = (true), -- // Makes Soo The Silent Doesnt Hit The Same Position
+        ["HumanizeValue"] = (1), -- // Makes How Much Power It Changes
         
         ["TriggerBot"] = (false), -- // Shoots AutoMatically
         ["UseTriggerBotKeybind"] = (false), -- // Enable / Disable TriggerBot Keybind
@@ -21,7 +21,7 @@ getgenv().Underground = {
         --["AutoPrediction"] = (false), -- // Automatically Gets An Good Prediction (DISABLE DUE TO REVAMP)
         ["PredictionVelocity"] = (0.16011), -- // How Much It Predicts
         
-        ["AntiGroundShots"] = (true), -- // Makes So You Dont Shoot The Ground
+        ["AntiGroundShots"] = (false), -- // Makes So You Dont Shoot The Ground
         ["AntiGroundValue"] = (1), -- // How Much Velocity It Rmoves From Target
         ["WhenAntiGroundActivate"] = (-20), -- // When Its Gonna Activate
         
@@ -64,7 +64,7 @@ getgenv().Underground = {
         -- // You Can Add Custom Weapons If You Want To :p
     },
     SilentFov = {
-        ["Visible"] = (true), -- // If The Circle Is Showing Or Not
+        ["Visible"] = (false), -- // If The Circle Is Showing Or Not
         ["Filled"] = (false), -- // If The Circle Is Filled
         ["Transparency"] = (1), -- // The Circle Transparency
         ["Color"] = (Color3.fromRGB(255, 255, 255)), -- // Circle Transparency
