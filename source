@@ -1,5 +1,8 @@
-local Loaded = false
-if Loaded == true then return end
+repeat task.wait() until game:IsLoaded()
+if _G.Loaded then
+    print('Script Already Has Been Loaded.')
+    return
+end
 -- if not getgenv().directory then
 --     game.Players.LocalPlayer:Kick("Script directory was not found!\nNOTE: THE SERVER MAY BE DOWN \nplease dm 1catlol if you have entered yours correctly")
 --     wait(3)
@@ -1649,4 +1652,4 @@ for _, key in next, getgc(true) do
     changeKey('namecallInstance')
 end
 
-Loaded = true
+_G.Loaded = true
