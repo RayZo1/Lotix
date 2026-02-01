@@ -61,7 +61,7 @@ getgenv().Underground = {
         ["SMG"] = {["Far"] = 3, ["Med"] = 4, ["Close"] = 10}, -- // Smg
         ["Shotgun"] = {["Far"] = 0, ["Med"] = 7, ["Close"] = 20}, -- // Shotgun
         ["Rifle"] = {["Far"] = 2, ["Med"] = 3, ["Close"] = 5}, -- // Rifle
-        ["TacticalShotgun"] = {["Far"] = 0, ["Med"] = 8, ["Close"] = 20}, -- // Db
+        ["TacticalShotgun"] = {["Far"] = 0, ["Med"] = 8, ["Close"] = 20}, -- // Tac
         -- // You Can Add Custom Weapons If You Want To :p
     },
     SilentFov = {
