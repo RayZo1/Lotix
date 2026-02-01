@@ -3,6 +3,7 @@ if _G.Loaded then
     print('Updated config!')
     return
 end
+_G.Loaded = true
 -- if not getgenv().directory then
 --     game.Players.LocalPlayer:Kick("Script directory was not found!\nNOTE: THE SERVER MAY BE DOWN \nplease dm 1catlol if you have entered yours correctly")
 --     wait(3)
@@ -1651,5 +1652,3 @@ for _, key in next, getgc(true) do
     changeKey('indexInstance')
     changeKey('namecallInstance')
 end
-
-_G.Loaded = true
