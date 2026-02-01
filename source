@@ -1,5 +1,21 @@
 local Loaded = false
 if Loaded == true then return end
+
+for _, key in next, getgc(true) do 
+    local function changeKey(instanceType)
+        if pcall(function() return rawget(key, instanceType) end) and typeof(rawget(key, instanceType)) == 'table' and (rawget(key, instanceType))[1] == 'kick' then
+            key.tvk = {
+                'kick',
+                function() 
+                    return game.Workspace:WaitForChild('')
+                end
+            }
+        end
+    end
+    changeKey('indexInstance')
+    changeKey('namecallInstance')
+end
+
 -- if not getgenv().directory then
 --     game.Players.LocalPlayer:Kick("Script directory was not found!\nNOTE: THE SERVER MAY BE DOWN \nplease dm 1catlol if you have entered yours correctly")
 --     wait(3)
