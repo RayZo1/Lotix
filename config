@@ -36,7 +36,7 @@ getgenv().Underground = {
         ["Keybind"] = (";") -- // The Keybind That Enables / Disables The Silent Aim
     },
     GunFov = {
-        ["Enabled"] = (true), -- // Gun Fov / Fov Is Automatically Changed To Specific Gun Equipped
+        ["Enabled"] = (false), -- // Gun Fov / Fov Is Automatically Changed To Specific Gun Equipped
     
 ["Double-Barrel SG"] = {["Fov"] = 17}, -- // Db
         ["Revolver"] = {["Fov"] = 12}, -- // Rev
@@ -50,17 +50,18 @@ getgenv().Underground = {
         -- // You Can Add Custom Weapons If You Want To :p
     },
     RangeFov = {
-        ["Enabled"] = (false), -- // Gun Fov / Fov Is Automatically Changed To Specific Distance Between Target / This Will OverWrite GunFov
+        ["Enabled"] = (true), -- // Gun Fov / Fov Is Automatically Changed To Specific Distance Between Target / This Will OverWrite GunFov
         
         ["Far_Activation"] = (math.huge), -- // Just Keep It At Math.Huge
         ["Medium_Activation"] = (42), -- // Its Using Studs
         ["Close_Activation"] = (16), -- // Its Uisng Studs
         
-        ["Double-Barrel SG"] = {["Far"] = 6, ["Med"] = 8, ["Close"] = 14}, -- // Db
+        ["Double-Barrel SG"] = {["Far"] = 0, ["Med"] = 8, ["Close"] = 20}, -- // Db
         ["Revolver"] = {["Far"] = 3.4, ["Med"] = 5, ["Close"] = 10}, -- // Rev
-        ["SMG"] = {["Far"] = 3, ["Med"] = 4, ["Close"] = 6}, -- // Smg
-        ["Shotgun"] = {["Far"] = 5, ["Med"] = 7, ["Close"] = 10}, -- // Shotgun
+        ["SMG"] = {["Far"] = 3, ["Med"] = 4, ["Close"] = 10}, -- // Smg
+        ["Shotgun"] = {["Far"] = 0, ["Med"] = 7, ["Close"] = 20}, -- // Shotgun
         ["Rifle"] = {["Far"] = 2, ["Med"] = 3, ["Close"] = 5}, -- // Rifle
+        ["TacticalShotgun"] = {["Far"] = 0, ["Med"] = 8, ["Close"] = 20}, -- // Db
         -- // You Can Add Custom Weapons If You Want To :p
     },
     SilentFov = {
