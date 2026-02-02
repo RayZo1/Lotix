@@ -2,7 +2,7 @@ getgenv().Underground = {
     Silent = {
         ["Enabled"] = (true), -- // Use The Silent Aim Or Not
         
-        ["Part"] = ("UpperTorso"), -- // What Part It Targerts
+        ["Part"] = ("ClosestPart"), -- // What Part It Targerts
         ["UseAirPart"] = (false), -- // When Target Isnt On The Ground It Uses This Part
         ["AirPart"] = ("LowerTorso"), -- // The Parts It Targets On When Player Isnt On The Ground
         ["ClosestPart"] = (true), -- // Automatically Gets The Closest Part Of The Target And Uses That
