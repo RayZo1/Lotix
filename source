@@ -809,22 +809,27 @@ if getgenv().DEBUG then
     print("[auth.injected.live] Started Emulation Thread")
 end
 
--- // Updated Closest Player Logic (Merged with Script 2 Conditions)
+-- // Updated Closest Player Logic 
 Script.Functions.GetClosestPlayer = LPH_NO_VIRTUALIZE(function()
     local Target = nil
     local ClosestDistance = math.huge
-    local MousePosition = UserInputService:GetMouseLocation()
-    local CurrentCamera = workspace.CurrentCamera
     
-    -- HitChance Check (From Script 1)
+    -- Ensure services are accessible
+    local UIS = game:GetService("UserInputService")
+    local CurrentCamera = workspace.CurrentCamera
+    local MousePosition = UIS:GetMouseLocation()
+    local LocalPlayer = game:GetService("Players").LocalPlayer
+    
+    -- HitChance Check (Respecting your original script config)
     local HitChance = Script.Functions.CalculateChance(Underground.Silent.HitChance)
     if not HitChance then
         SilentTarget = nil
         return nil
     end
 
-    for _, v in pairs(Players:GetPlayers()) do
-        if v.Character and v ~= Client and v.Character:FindFirstChild("HumanoidRootPart") then
+    for _, v in pairs(game:GetService("Players"):GetPlayers()) do
+        -- Ensure we aren't targeting ourselves and the player has a character
+        if v ~= LocalPlayer and v.Character and v.Character:FindFirstChild("HumanoidRootPart") then
             local Character = v.Character
             local Root = Character.HumanoidRootPart
             
@@ -832,9 +837,9 @@ Script.Functions.GetClosestPlayer = LPH_NO_VIRTUALIZE(function()
             local Position, OnScreen = CurrentCamera:WorldToViewportPoint(Root.Position)
             if not OnScreen then continue end
 
-            -- 2. Condition Checks (Merged from your provided snippet)
+            -- 2. Condition Checks
             -- Knocked / Grabbed Check
-            if (Underground.Silent.CheckIf_KO or shared.Saved['C​o​n​d​i​t​i​o​n​s']['P​l​a​y​e​r​ ​K​n​o​c​k​e​d']) then
+            if (Underground.Silent.CheckIf_KO or (shared.Saved and shared.Saved['C​o​n​d​i​t​i​o​n​s'] and shared.Saved['C​o​n​d​i​t​i​o​n​s']['P​l​a​y​e​r​ ​K​n​o​c​k​e​d'])) then
                 local KoCheck = CurrentGame.Functions.IsKnocked(Character)
                 local Grabbed = CurrentGame.Functions.IsGrabbed(v)
                 if KoCheck or Grabbed then continue end
@@ -846,36 +851,25 @@ Script.Functions.GetClosestPlayer = LPH_NO_VIRTUALIZE(function()
             end
 
             -- Wall Check / Visible Check
-            if (Underground.Silent.WallCheck or shared.Saved['C​o​n​d​i​t​i​o​n​s']['P​l​a​y​e​r​ ​V​i​s​i​b​l​e']) then
+            if (Underground.Silent.WallCheck or (shared.Saved and shared.Saved['C​o​n​d​i​t​i​o​n​s'] and shared.Saved['C​o​n​d​i​t​i​o​n​s']['P​l​a​y​e​r​ ​V​i​s​i​b​l​e'])) then
                 if not Script.Functions.RayCastCheck(Root, Character) then continue end
-            end
-
-            -- Social/Team Checks (Script 1)
-            if Underground.Both.CrewCheck and v:FindFirstChild("DataFolder") then
-                local MyCrew = Client.DataFolder.Information:FindFirstChild("Crew").Value
-                local TheirCrew = v.DataFolder.Information:FindFirstChild("Crew").Value
-                if MyCrew ~= "" and MyCrew == TheirCrew then continue end
-            end
-
-            if Underground.Both.TeamCheck and v.Team == Client.Team then
-                continue
-            end
-
-            if Underground.Both.FriendCheck and not table.find(Script.Friends, v.UserId) then
-                continue
             end
 
             -- 3. Distance & FOV Calculation
             local ScreenPos = Vector2.new(Position.X, Position.Y)
             local Distance = (ScreenPos - MousePosition).Magnitude
 
-            -- Respect the Silent Aim Circle Radius
+            -- Check against the Silent Aim Circle Radius
             if Distance < ClosestDistance and Distance < Script.Drawing.SilentCircle.Radius then
                 ClosestDistance = Distance
                 Target = v
             end
         end
     end
+
+    SilentTarget = Target
+    return Target
+end)
 
     SilentTarget = Target
     return Target
