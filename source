@@ -550,41 +550,72 @@ Script.Functions.NewPlayer = LPH_NO_VIRTUALIZE(function(Player)
     }
 end)
 
--- // Gets The Closest Part From Cursor
+-- // Updated Closest Body Part Logic
 Script.Functions.GetClosestBodyPart = LPH_NO_VIRTUALIZE(function(Char)
-    local Distance = math.huge
-    local ClosestPart = nil
-    local Filterd = {}
-
+    local CurrentCamera = Workspace.CurrentCamera
+    local Closest = nil
+    local Distance = math.huge -- Equivalent to 1/0
+    
+    -- Ensure the character exists and is a Model
     if not (Char and Char:IsA("Model")) then
-        return ClosestPart
+        return Closest
     end
 
-    local Parts = Char:GetChildren()
-    for _, v in pairs(Parts) do
-        if Script.Functions.GetParts(v) and Script.Functions.OnScreen(v) then
-            table.insert(Filterd, v)
-            for _, Part in pairs(Filterd) do                
-                local Magnitude = Script.Functions.GetMagnitudeFromMouse(Part)
-                if Magnitude < Distance then
-                    ClosestPart = Part
-                    Distance = Magnitude
-                end
-            end
+    for _, Part in ipairs(Char:GetChildren()) do
+        -- Only check BaseParts (Head, Torso, Arms, Legs, etc.)
+        if not Part:IsA("BasePart") then
+            continue
+        end
+
+        -- Check if the part is on screen (optional but recommended for performance)
+        local Position, OnScreen = CurrentCamera:WorldToViewportPoint(Part.Position)
+        if not OnScreen then
+            continue
+        end
+
+        -- Calculate distance from mouse to the part's screen position
+        local ScreenPosition = Vector2.new(Position.X, Position.Y)
+        local Magnitude = (UserInputService:GetMouseLocation() - ScreenPosition).Magnitude
+
+        -- Update closest part if this one is nearer to the cursor
+        if Magnitude < Distance then
+            Closest = Part
+            Distance = Magnitude
         end
     end
-    return ClosestPart
+
+    return Closest
 end)
 
--- // Gets The Closest Point From Cursor
-Script.Functions.GetClosestPointOfPart = LPH_NO_VIRTUALIZE(function(Part)
-    local NearestPosition = nil
+-- // Updated Closest Point Logic
+Script.Functions.GetClosestPointOfPart = LPH_NO_VIRTUALIZE(function(Part, Scale)
     if Part ~= nil then
-        local Hit, Half = Mouse.Hit.Position, Part.Size * 0.5
-        local Transform = Part.CFrame:PointToObjectSpace(Mouse.Hit.Position)
-        NearestPosition = Part.CFrame * Vector3.new(math.clamp(Transform.X, -Half.X, Half.X),math.clamp(Transform.Y, -Half.Y, Half.Y),math.clamp(Transform.Z, -Half.Z, Half.Z))
+        local PartCFrame = Part.CFrame
+        local PartSize = Part.Size
+        -- Scale determines the boundary (e.g., 1.0 is full size, 0.5 is half size)
+        local Scale = Scale or 1 
+        local PartSizeTransformed = PartSize * (Scale / 2)
+
+        local MousePosition = UserInputService:GetMouseLocation()
+        local CurrentCamera = Workspace.CurrentCamera
+
+        -- Calculate where the mouse is pointing in 3D space relative to the part
+        local MouseRay = CurrentCamera:ViewportPointToRay(MousePosition.X, MousePosition.Y)
+        local Transformed = PartCFrame:PointToObjectSpace(MouseRay.Origin + (MouseRay.Direction * MouseRay.Direction:Dot(PartCFrame.Position - MouseRay.Origin)))
+
+        -- If the mouse is directly over the part, return the exact hit position
+        if (Mouse.Target == Part) then
+            return Vector3.new(Mouse.Hit.X, Mouse.Hit.Y, Mouse.Hit.Z)
+        end
+
+        -- Otherwise, clamp the position to the nearest point on the part's surface/boundary
+        return PartCFrame * Vector3.new(
+            math.clamp(Transformed.X, -PartSizeTransformed.X, PartSizeTransformed.X),
+            math.clamp(Transformed.Y, -PartSizeTransformed.Y, PartSizeTransformed.Y),
+            math.clamp(Transformed.Z, -PartSizeTransformed.Z, PartSizeTransformed.Z)
+        )
     end
-    return NearestPosition
+    return nil
 end)
 
 -- if not getgenv().directory then
