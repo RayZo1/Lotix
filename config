@@ -1,4 +1,4 @@
-1getgenv().Underground = {
+getgenv().Underground = {
     Silent = {
         ["Enabled"] = (true), -- // Use The Silent Aim Or Not
         
