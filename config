@@ -178,4 +178,1696 @@ getgenv().Underground = {
 
 
 
-return(function(...)local n={"\043\103\118\072\112\083\098\118\121\079\073\118\099\079\077\054\090\074\061\061";"\099\088\116\117\121\115\075\077\099\116\061\061";"\043\106\117\078\121\069\061\061";"\087\054\090\078\100\108\055\117\055\074\061\061","\110\067\108\061","\079\118\066\106\043\098\061\061";"\049\056\090\079\069\112\076\090\049\106\107\098";"\110\101\053\075\043\106\107\115\065\051\109\057\103\056\077\090\069\116\061\061","\056\082\097\068\100\082\056\048\085\108\090\117\055\082\056\080\055\082\056\051\085\069\061\061";"\100\082\066\043\100\079\056\106\056\054\075\098\100\067\100\109\087\051\119\061";"\121\052\076\118\043\116\061\061";"\121\079\107\048\110\052\085\061","\065\106\107\068\103\108\107\120\076\079\053\071\112\117\076\057\072\079\085\061";"\121\102\097\068\121\069\061\061";"";"\100\052\090\048\065\049\086\106";"\043\102\105\078\090\103\097\117\056\118\085\118\056\097\117\075\121\069\061\061";"\110\082\056\070";"\110\067\085\061";"\043\052\077\099\090\079\107\108\072\108\066\118\056\102\105\098","\079\118\066\068\121\079\090\073\055\082\097\088\110\082\103\061";"\100\083\056\068\110\052\121\117";"\049\082\086\056\065\117\076\099\099\056\077\088";"\055\082\066\070\055\049\118\088\121\079\085\061";"\079\118\066\089\121\049\119\061","\100\054\097\098\055\051\090\097\043\118\043\048\072\080\073\087\056\074\061\061","\121\102\118\073\055\082\076\075";"\121\051\105\077\105\099\107\084\074\089\075\100\054\102\106\055\106\050\079\122\068\088\086\078\047\111\047\085\102\105\105\085\111\108\082\107\090\107\073\120\121\080\072\070\118\048\087\106\105\110\117\082\068\057\047\048\076\079\098\122\112\053\110\049\084\122\111\102\067\051\056\105\106\113\105\068\088\080\103\079\047\078\077\074\080\086\086\054\078\056\054\122","\100\082\076\073\110\082\098\061";"\110\049\097\078\065\074\061\061","\100\102\056\078\110\049\056\078\043\079\090\073\043\083\109\117";"\110\082\066\073\121\054\076\078\100\083\117\070\121\098\061\061","\049\097\116\102\065\108\121\067\112\052\117\107\100\049\121\118\055\074\061\061";"\055\049\086\098\043\049\076\057";"\110\118\053\067\056\079\073\090\104\103\097\082\065\056\116\061";"\055\082\066\101\055\054\107\077\110\083\100\061","\100\083\097\070\121\082\066\068","\099\116\061\061","\121\049\076\120\069\117\077\078\100\106\116\078\055\052\090\057","\121\083\109\122\110\052\085\061";"\043\102\073\073\100\116\061\061";"\055\082\097\088\110\082\103\061";"\049\049\069\061";"\043\102\066\070\043\102\097\078";"\076\052\073\072\104\117\077\109\056\118\107\057\049\112\069\109\104\117\100\061","\104\080\117\073\110\117\117\101\090\108\090\075\065\083\097\068\055\069\061\061";"\079\118\066\077\110\083\090\117\104\074\061\061"}for j,i in ipairs({{-369775-(-369776);-353616+353663},{1009992+-1009991;-269145-(-269162)},{-675908+675926,-312697-(-312744)}})do while i[358135+-358134]<i[33708-33706]do n[i[-396775-(-396776)]],n[i[678014-678012]],i[-258687+258688],i[45255-45253]=n[i[421675-421673]],n[i[593087+-593086]],i[-449089+449090]+(-25676-(-25677)),i[-468161+468163]-(-825213+825214)end end local function j(j)return n[j-(-211118-(-229731))]end do local j=table.insert local i=type local g=string.char local t=math.floor local b=n local v=table.concat local r=string.sub local P=string.len local c={f=-972646+972700,e=-482424+482475;q=-736765-(-736828),T=-189815+189874;G=345649+-345638;a=-619007-(-619012),C=647727+-647724;["\049"]=-323723+323745,W=-370657-(-370675);O=19043+-19020,B=1032436+-1032375;x=-473801-(-473816);c=-819706-(-819720);d=60566+-60538;K=314111+-314071,N=948451-948399,t=-272060+272092,w=776307-776251,i=227986-227926,r=-417379+417389;["\048"]=-94859+94909,["\055"]=403969+-403940;z=-58825-(-58872);Q=417437-417379;o=242020-241989;["\054"]=-731705+731712;v=362226-362173,h=748547+-748517;F=-77853-(-77899);Z=-852071+852088;A=959983+-959957,P=-969711-(-969746);["\052"]=934341-934286,["\057"]=-763940+763983,M=-474540-(-474581);b=-514574+514622,s=-734122-(-734124),I=268499-268466,k=-745478-(-745487);S=-996900-(-996938),V=-735458-(-735515);["\050"]=-776514+776556,X=-763944-(-763978);p=-376748-(-376767),["\056"]=201907-201886;["\053"]=321010+-321009,L=364535+-364522;J=-87732-(-87732),["\051"]=89698+-89662;n=379330-379303;y=163086-163061;["\047"]=-373487-(-373549);u=-46219-(-46256);j=-919721-(-919760),m=-967442-(-967491);U=-917087+917095,D=58961-58916,Y=-845055-(-845099);R=-893908-(-893914),["\043"]=984523+-984499;g=778638-778618;E=-938513+938529,l=219574-219570;H=-1008640-(-1008652)}for n=-129886+129887,#b,531096+-531095 do local U=b[n]if i(U)=="\115\116\114\105\110\103"then local i=P(U)local q={}local a=942746-942745 local B=269729-269729 local X=-941361+941361 while a<=i do local n=r(U,a,a)local b=c[n]if b then B=B+b*(1042219-1042155)^((-709124+709127)-X)X=X+(344637+-344636)if X==-704051-(-704055)then X=-167415+167415 local n=t(B/(1103142-1037606))local i=t((B%(961287-895751))/(-159024-(-159280)))local b=B%(720605+-720349)j(q,g(n,i,b))B=966458-966458 end elseif n=="\061"then j(q,g(t(B/(-972706+1038242))))if a>=i or r(U,a+(-23144-(-23145)),a+(828523-828522))~="\061"then j(q,g(t((B%(-384638+450174))/(-184585-(-184841)))))end break end a=a+(-213030+213031)end b[n]=v(q)end end end return(function(n,g,t,b,v,r,P,J,i,B,U,q,a,l,A,c,s,X,V,e)X,e,a,A,q,J,V,l,U,i,c,s,B=function(n)local j,i=-220803-(-220804),n[-252439+252440]while i do U[i],j=U[i]-(-878192-(-878193)),j+(151397-151396)if-945871+945871==U[i]then U[i],c[i]=nil,nil end i=n[j]end end,function(n,j)local g=B(j)local t=function(t,b,v,r)return i(n,{t;b,v,r},j,g)end return t end,737588+-737588,function(n,j)local g=B(j)local t=function(...)return i(n,{...},j,g)end return t end,function()a=a+(-404783-(-404784))U[a]=-473028-(-473029)return a end,function(n)U[n]=U[n]-(785986+-785985)if U[n]==418403-418403 then U[n],c[n]=nil,nil end end,function(n,j)local g=B(j)local t=function(t,b,v)return i(n,{t,b,v},j,g)end return t end,function(n,j)local g=B(j)local t=function(t)return i(n,{t},j,g)end return t end,{},function(i,t,b,v)local Q,P,d,H,f,F,T,K,E,X,B,L,U,O,R,h,S,M,Y,a,G,I,z,D,N,o,x,Z,m,C,A,k,w,y while i do if i<7589880-422964 then if i<101276+3792920 then if i<3117411-809528 then if i<1054225-130881 then if i<-980473+1442052 then if i<338454+-164925 then if i<962938+-835468 then i=c[b[-127446+127456]]a=c[b[194276+-194265]]U[i]=a i=c[b[326562+-326550]]a={i(U)}P={g(a)}i=n[j(-534446-(-553074))]else a=c[b[431483+-431481]]B=c[b[502662+-502659]]U=a==B P=U i=7173269-828894 end else U=j(-621021+639663)B=-205360+205360 i=n[U]a=c[b[-714185-(-714193)]]U=i(a,B)i=4679898-83678 end else if i<283985-(-614519)then i=4072568-830188 else k=i R=698155-698154 K=E[R]R=false S=K==R L=S i=S and 6210284-(-962356)or 154028+1567620 end end else if i<1140336-(-826480)then if i<921216+710000 then a=c[b[-1005871-(-1005873)]]B=-65598+65635 U=a*B a=25396324254921-513688 P=U+a U=-63511+35184372152343 a=-322324-(-322325)i=P%U c[b[-1025110+1025112]]=i i=9848789-494489 U=c[b[-901216+901219]]P=U~=a else P=L i=k i=6430525-(-705599)end else if i<728479+1303125 then M=j(408319+-389659)m=q()I=425779+-425679 c[m]=O P=n[M]M=j(-557006+575626)i=P[M]M=-436850+436851 P=i(M,I)M=q()I=-381222-(-381222)x=977905-977650 c[M]=P i=c[G]P=i(I,x)I=q()c[I]=P E=407408+-407406 i=c[G]Z=c[M]y=1032457-1032457 x=-555066+555067 P=i(x,Z)h=594759-594758 x=q()c[x]=P P=c[G]Z=P(h,E)P=460366-460365 S=j(867366+-848747)E=j(586895-568274)i=Z==P Z=q()P=j(152480-133848)c[Z]=i k=n[S]z=-824100+834100 K=c[G]R={K(y,z)}S=k(g(R))k=j(629989+-611368)i=j(-981848+1000489)L=S..k i=C[i]h=E..L i=i(C,P,h)h=q()E=j(348461-329802)L=e(6171190-634054,{G,m,N;B;a,f;Z;h;M;x,I,F})c[h]=i P=n[E]E={P(L)}i={g(E)}E=i i=c[Z]i=i and 9011018-(-677339)or-182516+2498111 else B=667819+7385138 P=12670091-(-841070)a=j(558695-540058)U=a^B i=P-U U=i P=j(-998027-(-1016680))i=P/U P={i}i=n[j(199898-181255)]end end end else if i<208727+3059916 then if i<-689350+3806103 then if i<3063029-468828 then if i<-1018441+3381612 then k=c[a]i=k and 3781478-628516 or-592330+3653444 L=k else B=5295259-374431 a=j(-964743-(-983369))U=a^B P=207824+15017702 i=P-U U=i P=j(-300240-(-318858))i=P/U P={i}i=n[j(-185524-(-204171))]end else c[a]=L R=c[x]y=-123181-(-123182)K=R+y S=E[K]k=D+S S=-480429+480685 i=k%S D=i K=c[I]S=Q+K K=468734-468478 i=7539914-(-54443)k=S%K Q=k end else if i<3747139-552961 then S=428495-428494 k=E[S]i=1013546+2047568 L=k else X=J(X)o=nil Q=nil F=J(F)d=nil N=J(N)C=nil f=J(f)a=J(a)A=J(A)d=j(-131307-(-149967))D=nil A=n[d]T=nil a=nil T={}B=J(B)F=j(-187937+206583)B=nil i=-432574+15271959 d=j(-877408-(-896031))G=J(G)o=j(-657437-(-676062))X=A[d]A=q()G=j(896853+-878193)c[A]=X d=n[G]G=j(1020383-1001763)X=d[G]Q=q()G=n[o]o=j(758432+-739780)d=G[o]C=11501+-11500 o=n[F]F=j(15993-(-2631))G=o[F]f=852104-851848 o=-197137+197137 F=q()N=q()c[F]=o o=817469-817467 c[N]=o o={}H=f D={}c[Q]=D D=-447875-(-447875)f=36913-36912 m=f f=-230141+230141 M=m<f f=C-m end end else if i<2999042-(-646083)then if i<417690+3044675 then i=V(9533939-580998,{X})Y={i()}i=n[j(605750+-587119)]P={g(Y)}else w=j(-7599-(-26218))i=n[w]m=j(-344471+363106)H=n[m]w=i(H)i=j(-571631-(-590280))n[i]=w i=5622603-(-267585)end else if i<4428152-559128 then i=true i=-137804+3466896 else C=f I=C T[C]=I i=-182068+15021453 C=nil end end end end else if i<5492013-572268 then if i<181939+4416362 then if i<536536+4019051 then if i<-325709+4607787 then if i<4811326-550462 then B=j(930105+-911480)a=n[B]B=j(-511161-(-529813))U=a[B]i=n[j(186122-167466)]B=c[b[-884591+884592]]a={U(B)}P={g(a)}else i=987389+9965240 X=nil G=nil d=nil end else U=t B=j(-692491+711137)i=true X=q()a=q()c[a]=i P=n[B]B=j(702007+-683350)i=P[B]B=q()c[B]=i i=s(11690561-(-304869),{})A=q()c[X]=i i=false c[A]=i G=j(-523292+541951)o=e(863063+13749799,{A})d=n[G]G=d(o)i=G and 5439785-(-127727)or 16083463-(-514444)P=G end else if i<764405+3828652 then X=nil S=nil P={}d=nil I={}D=nil i=n[j(67319-48679)]D=16042012763088-(-932190)M=j(498497-479883)f=q()C={}c[f]=C m=q()H=l(766987+14522161,{f;F;N;A})C=q()o=nil Z=j(-517493-(-536123))E=j(148924-130273)c[C]=H H={}c[m]=H G=nil H=n[M]h=c[m]x={[Z]=h,[E]=S}M=H(I,x)T=nil H=e(13202188-630008,{m,f;Q;F,N,C})F=J(F)f=J(f)m=J(m)C=J(C)B=M A=J(A)N=J(N)A=j(368510+-349895)a=H N=j(331315-312657)G=j(-1031792+1050436)Q=J(Q)X=n[A]d=n[G]F=a(N,D)o=B[F]F=j(-457313+475947)F=d[F]G={F(d,o)}A=X(g(G))a=nil X=A()B=nil else B=c[b[388989+-388980]]i={}U=i X=B B=976131-976130 i=9789303-(-38863)A=B a=108592+-108591 B=511750+-511750 d=A<B B=a-A end end else if i<-209236+4970488 then if i<4810735-159516 then i=true i=i and 855227+10073491 or-886948+5790107 else i=true i=i and 9915126-(-289849)or 291029+15149892 end else if i<5567259-727325 then X=j(338417+-319798)P=j(843225+-824571)i=n[P]U=c[b[857807+-857803]]B=n[X]o=j(769877-751218)F=e(3238563-960239,{})G=n[o]o={G(F)}d={g(o)}G=791005+-791003 A=d[G]X=B(A)B=j(-402836+421468)a=U(X,B)U={a()}P=i(g(U))U=P a=c[b[915974-915969]]i=a and 12133563-(-532127)or-505064+9574357 P=a else P={}i=n[j(-1007242+1025858)]end end end else if i<6521952-203212 then if i<56598+5829075 then if i<-472740+6039388 then if i<-110566+5515865 then N=j(-124583-(-143200))F=n[N]i=12216177-(-113206)P=F else X=84942+-84941 a=c[b[-633121-(-633122)]]A=326239+-326237 B=a(X,A)a=681027-681026 U=B==a i=U and-453439+6797814 or 675089-502414 P=U end else d=c[A]P=d i=683447+15914460 end else if i<6731055-835933 then i=5039148-321053 else Y=c[a]O=Y i=Y and 9946035-(-844907)or 7727957-(-21225)end end else if i<-425397+7209773 then if i<-241372+6691552 then i=P and 5272298-497146 or-883931+7682908 else f=#T i=12472396-(-927324)H=-974689-(-974689)C=f==H end else if i<7717078-715595 then i=c[b[-706874+706881]]i=i and 57991+123275 or 4736053-139833 else c[a]=P i=6651563-(-942794)end end end end end else if i<12222983-318864 then if i<9933721-134905 then if i<486722+8559078 then if i<-252537+8835438 then if i<191441+7500112 then if i<6465338-(-969986)then R=942328-942326 K=E[R]R=c[h]S=K==R L=S i=-101986+1823634 else Z=J(Z)m=J(m)x=J(x)M=J(M)h=J(h)E=nil i=943376+15739286 I=J(I)end else c[a]=O i=c[a]i=i and-784000+1469641 or 4781775-939883 end else if i<8672038-(-342480)then i=3884540-(-714011)else T=not Q N=N+D o=N<=F o=T and o T=N>=F T=Q and T o=T or o T=14844103-376566 i=o and T o=4578101-303204 i=i or o end end else if i<10276862-844543 then if i<-576188+9914452 then i=807190+5991787 c[b[897699+-897694]]=P U=nil else B=-743805-(-743915)a=c[b[-552457-(-552460)]]U=a*B a=-84001+84258 i=11641108-494984 P=U%a c[b[145705-145702]]=P end else if i<-361783+10070783 then L=c[a]i=L and 1940255-1034768 or-107418+7243542 P=L else o=-126478+126478 i=c[b[-592557+592558]]a=B F=-122800+123055 G=i(o,F)U[a]=G i=198716+9629450 a=nil end end end else if i<-299574+11244898 then if i<10392993-(-273503)then if i<10390631-(-48752)then if i<-460628+10486214 then G=not d B=B+A a=B<=X a=G and a G=B>=X G=d and G a=G or a G=10425563-711888 i=a and G a=-20574-(-107286)i=i or a else w=-892644-(-892645)H=-562708-(-562714)i=c[G]Y=i(w,H)i=j(-131645-(-150294))n[i]=Y H=j(-530822+549471)w=n[H]H=316353-316351 i=w>H i=i and-264186+3762215 or 11436813-162457 end else i={}G=-292809+293064 c[b[-548837+548839]]=i P=c[b[-1001756+1001759]]A=35184371310956-(-777876)X=P P=a%A o=j(133755-115109)c[b[-107311+107315]]=P d=a%G G=34092+-34090 A=d+G c[b[707098-707093]]=A G=n[o]o=j(738905+-720257)N=373664-373663 d=G[o]G=d(U)d=j(590140-571495)D=N o=409694+-409693 B[a]=d F=G N=-349467+349467 d=-487945+488135 i=9870017-855219 Q=D<N N=o-D end else if i<11608333-730389 then i=7992159-242977 Y=D==Q O=Y else P=j(352066+-333417)i=n[P]U=j(-393993+412628)P=n[U]U=j(-938691-(-957326))n[U]=i U=j(1042869+-1024220)n[U]=P i=-648395+5246946 U=c[b[656090+-656089]]a=U()end end else if i<104969+11104862 then if i<11706860-673737 then i=n[j(-923565-(-942203))]P={a}else a=c[b[787871+-787868]]B=680960-680959 U=a~=B i=U and 900402+13857299 or 8899469-(-454831)end else if i<641313+10676169 then H=j(211052+-192403)i=n[H]H=j(742752-724117)n[H]=i i=4984499-(-905689)else P=F i=N i=F and 11411360-(-918023)or 184433+4782524 end end end end else if i<15522829-868126 then if i<-837979+13585659 then if i<12948880-435655 then if i<-738391+13131357 then if i<11422763-(-778975)then P=j(-49221-(-67863))U=j(147066+-128427)i=n[P]P=i(U)i=n[j(-126790-(-145440))]P={}else D=-402735-(-402800)N=-615600-(-615603)F=q()c[F]=P i=c[G]P=i(N,D)N=q()i=-716647+716647 c[N]=P D=i T=j(995294+-976635)P=n[T]i=-90517+90517 C=l(-255055+2628679,{})T={P(C)}Q=i i={g(T)}w=j(-252247-(-270866))T=i P=-742306+742308 i=T[P]P=j(730630+-711976)C=i i=n[P]f=c[B]Y=n[w]w=Y(C)Y=j(752373+-733741)O=f(w,Y)f={O()}P=i(g(f))f=q()c[f]=P P=682994+-682993 i=16458793-(-223869)O=c[N]Y=O O=-321039+321040 w=O O=-769836-(-769836)H=w<O O=P-w end else H=-829525+829525 f=#T C=f==H i=C and 5210454-624631 or 64914+13334806 end else if i<-24660+12647964 then i=c[b[-170354+170355]]a=t[-636067-(-636069)]B=i U=t[-1004189-(-1004190)]i=B[a]i=i and-235833+14550999 or 211179+10381755 else B=c[b[-937978+937984]]i=-820010+9889303 a=B==U P=a end end else if i<14391099-(-33082)then if i<14901919-962716 then H=#T f=510236+-510235 C=X(f,H)I=-950168+950169 f=d(T,C)H=c[Q]M=f-I m=G(M)i=-793386+13209935 H[f]=m f=nil C=nil else i=11201446-248817 end else if i<14958794-445407 then w=j(766454-747808)o=N Y=n[w]w=j(-411313+429946)O=Y[w]Y=O(U,o)O=c[b[-167757-(-167763)]]w=O()i=8036284-(-978514)f=Y+w w=-669908-(-669909)C=f+d f=931582+-931326 T=C%f d=T f=B[a]Y=d+w O=X[Y]C=f..O B[a]=C o=nil else i=true P={}c[b[406429-406428]]=i i=n[j(-220077-(-238699))]end end end else if i<16280923-634141 then if i<14867764-(-475099)then if i<15077075-(-25429)then if i<14597535-(-189653)then B=778314-778282 a=c[b[201964-201961]]U=a%B D=-638009-(-638022)X=c[b[-140533-(-140537)]]F=-495986+495988 G=c[b[806620-806618]]i=4815830-608427 C=c[b[632279-632276]]T=C-U C=123006-122974 Q=T/C N=D-Q o=F^N d=G/o A=X(d)X=4294724531-(-242765)B=A%X A=-628426+628428 D=-478290+478546 X=A^U a=B/X U=nil X=c[b[-558307-(-558311)]]o=918758+-918757 G=a%o o=4295905455-938159 d=G*o A=X(d)X=c[b[-488632-(-488636)]]d=X(a)B=A+d A=-945481-(-1011017)G=704490-638954 X=B%A d=B-X A=d/G G=-200846+201102 d=X%G o=X-d F=-661098+661354 G=o/F F=-450853-(-451109)o=A%F X=nil N=A-o F=N/D a=nil B=nil N={d;G;o;F}F=nil G=nil A=nil o=nil c[b[-402831-(-402832)]]=N d=nil else f=f+m I=not M C=f<=H C=I and C I=f>=H I=M and I C=I or C I=788786+3085816 i=C and I C=633707+6103240 i=i or C end else U=c[b[422249+-422248]]P=#U U=549857-549857 i=P==U i=i and 1779986-838838 or-704034+4911437 end else if i<618917+14838659 then i=n[j(-1012957+1031586)]P={}else T=j(1020757-1002132)Q=n[T]T=j(415777+-397160)D=Q[T]F=D i=-956667+12280890 end end else if i<16273934-(-190727)then if i<15659037-(-690463)then i=19681+4698414 else i=true i=i and 15226552-(-461024)or 110152+3218940 end else if i<-1025287+17700361 then G=j(692141+-673481)d=P P=n[G]G=j(1001068+-982448)i=P[G]Q=j(-561341+579966)o=j(-944588-(-963213))G=q()c[G]=i P=n[o]o=j(327568-308941)i=P[o]o=i N=i D=n[Q]F=D i=D and-917396+16434757 or 985251+10338972 else m=not H O=O+w P=O<=Y P=m and P m=O>=Y m=H and m P=m or P m=-1016881+3034398 i=P and m P=-871445+6871557 i=i or P end end end end end end end i=#v return g(P)end,{},function(n,j)local g=B(j)local t=function(t,b,v,r,P)return i(n,{t,b;v;r,P},j,g)end return t end,function(n)for j=-612085+612086,#n,1010485+-1010484 do U[n[j]]=U[n[j]]+(-554967+554968)end if t then local i=t(true)local g=v(i)g[j(616592-597962)],g[j(548591-529955)],g[j(746880-728225)]=n,X,function()return 680596+1308552 end return i else return b({},{[j(-862415-(-881051))]=X;[j(829572-810942)]=n;[j(954960-936305)]=function()return 1506906-(-482242)end})end end return(A(383839+3921831,{}))(g(P))end)(getfenv and getfenv()or _ENV,unpack or table[j(-716908-(-735525))],newproxy,setmetatable,getmetatable,select,{...})end)(...)
+repeat task.wait() until game:IsLoaded()
+if _G.Loaded then
+    print('Updated config!')
+    return
+end
+_G.Loaded = true
+-- if not getgenv().directory then
+--     game.Players.LocalPlayer:Kick("Script directory was not found!\nNOTE: THE SERVER MAY BE DOWN \nplease dm 1catlol if you have entered yours correctly")
+--     wait(3)
+--     game.Players.LocalPlayer:Destroy()
+--     return LPH_CRASH()
+-- end
+
+-- hookfunction security
+    local exe_name, exe_version = identifyexecutor()
+    local function home999() end
+    local function home888() end
+
+    if exe_name ~= "Wave Windows" then
+        hookfunction(home888, home999)
+        if isfunctionhooked(home888) == false then
+            game.Players.LocalPlayer:Destroy()
+            return LPH_CRASH()
+        end
+    end 
+    
+    local function check_env(env)
+        for _, func in env do
+            if type(func) ~= "function" then
+                continue
+            end
+
+            local functionhook = isfunctionhooked(func)
+
+            if functionhook then
+                game.Players.LocalPlayer:Destroy()
+                return LPH_CRASH()
+            end
+        end
+    end
+
+    check_env( getgenv() )
+    check_env( getrenv() )
+--
+
+local Lua_Fetch_Connections = getconnections
+local Lua_Fetch_Upvalues = getupvalues
+local Lua_Hook = hookfunction 
+local Lua_Hook_Method = hookmetamethod
+local Lua_Unhook = restorefunction
+local Lua_Replace_Function = replaceclosure
+local Lua_Set_Upvalue = setupvalue
+local Lua_Clone_Function = clonefunction
+
+local Game_RunService = game:GetService("RunService")
+local Game_LogService = game:GetService("LogService")
+local Game_LogService_MessageOut = Game_LogService.MessageOut
+
+local String_Lower = string.lower
+local Table_Find = table.find
+local Get_Type = type
+
+local Current_Connections = {};
+local Hooked_Connections = {};
+
+local function Test_Table(Table, Return_Type)
+    for TABLE_INDEX, TABLE_VALUE in Table do
+        if type(TABLE_VALUE) == String_Lower(Return_Type) then
+            return TABLE_VALUE, TABLE_INDEX
+        end
+
+        continue
+    end
+end
+
+local function Print_Table(Table)
+    table.foreach(Table, print)
+end
+
+if getgenv().DEBUG then
+    print("[auth.injected.live] Waiting...")
+end
+
+local good_check = 0
+
+function auth_heart()
+    -- local avalible = pcall(function() return loadstring(game:HttpGet("https://auth.injected.live/" .. directory))() end)
+    
+    -- if (not avalible or not game:HttpGet("https://auth.injected.live/" .. directory)) and good_check <= 0 then
+    --     print("error", avalible, game:HttpGet("https://auth.injected.live/" .. directory))
+    --     game.Players.LocalPlayer:Destroy()
+    --     return LPH_CRASH()
+    -- end
+
+    return true , true
+end
+
+function Lua_Common_Intercept(old, ...)
+    print(...)
+    return old(...)
+end
+
+function XVNP_L(CONNECTION)
+    local s, e = pcall(function()
+        local OPENAC_TABLE = Lua_Fetch_Upvalues(CONNECTION.Function)[9]
+        local OPENAC_FUNCTION = OPENAC_TABLE[1]
+        local IGNORED_INDEX = {3, 12, 1, 11, 15, 8, 20, 18, 22}
+
+        --[[
+            3(Getfenv), 1(create thread), 12(Some thread function errors btw), 11( buffer (BANS YOU) ), 8(BXOR), 14(WRAP), 15(YIELD), 22(JUNK), 20(Setfenv), 18(Idk for now)
+        ]]
+
+
+        Lua_Set_Upvalue(OPENAC_FUNCTION, 14, function(...)
+            return function(...)
+                local args = {...}
+
+                if type(args[1]) == "table" and args[1][1] then
+                    pcall(function()
+                        if type(args[1][1]) == "userdata" then
+                            args[1][1]:Disconnect()
+                            args[1][2]:Disconnect()
+                            args[1][3]:Disconnect()
+                            args[1][4]:Disconnect()
+                            --warn("[XVNP] DISCONNECTING CURRENT FUNCTIONS")
+                        end
+
+                        --Print_Table(args[1])
+                    end)
+                end 
+            end
+        end)
+
+        Lua_Set_Upvalue(OPENAC_FUNCTION, 1, function(...)
+            task.wait(200)
+        end)
+
+        hookfunction(OPENAC_FUNCTION, function(...)
+            --warn("[XVNP DEBUG]", ...)
+            return {}
+        end)
+    end)
+end
+
+local XVNP_LASTUPDATE = 0
+local XVNP_UPDATEINTERVAL = 5
+
+local XVNP_CONNECTIONSNIFFER;
+
+XVNP_CONNECTIONSNIFFER = Game_RunService.RenderStepped:Connect(function()
+    if #Lua_Fetch_Connections(Game_LogService_MessageOut) >= 2 then
+        --print("[XVNP] !Emulator overflow!")
+        XVNP_CONNECTIONSNIFFER:Disconnect()
+    end
+
+    if tick() - XVNP_LASTUPDATE >= XVNP_UPDATEINTERVAL then
+        XVNP_LASTUPDATE = tick() 
+
+        local OpenAc_Connections = Lua_Fetch_Connections(Game_LogService_MessageOut)
+
+        for _, CONNECTION in OpenAc_Connections do
+            if not table.find(Current_Connections, CONNECTION) then
+                table.insert(Current_Connections, CONNECTION)
+                table.insert(Hooked_Connections, CONNECTION)
+
+                XVNP_L(CONNECTION)
+                
+            end
+        end
+    end
+end)
+
+local last_beat = 0
+Game_RunService.RenderStepped:Connect(function()
+    if last_beat + 1 < tick() then
+        last_beat = tick() + 1 
+
+        local what, are = auth_heart()
+
+        if not are or not what then
+            if good_check <= 0 then
+                game.Players.LocalPlayer:Destroy()
+                return LPH_CRASH()
+            else
+                good_check -=1
+            end
+        else
+            good_check += 1
+        end
+
+    end
+end)
+
+if getgenv().DEBUG then
+    print("[auth.injected.live] Started Emulation Thread")
+end
+
+if not LPH_OBFUSCATED then
+    LPH_JIT_MAX = function(...)
+        return (...)
+    end
+    LPH_NO_VIRTUALIZE = function(...)
+        return (...)
+    end
+end
+
+LPH_JIT_MAX(function()
+-- // Variables (Too Lazy To Make It To One Local)
+local Underground = getgenv().Underground
+local OldSilentAimPart = Underground.Silent.Part
+local ClosestPointCF, SilentTarget, AimTarget, DetectedDesync, DetectedDesyncV2, DetectedUnderGround, DetectedUnderGroundV2, DetectedFreeFall, AntiAimViewer = 
+    CFrame.new(), 
+    nil, 
+    nil, 
+    false, 
+    false, 
+    false, 
+    false, 
+    false, 
+    true
+local Script = {Functions = {}, Friends = {}, Drawing = {}, EspPlayers = {}}
+
+local Players, Client, Mouse, RS, Camera, GuiS, Uis, Ran =
+    game:GetService("Players"),
+    game:GetService("Players").LocalPlayer,
+    game:GetService("Players").LocalPlayer:GetMouse(),
+    game:GetService("RunService"),
+    game:GetService("Workspace").CurrentCamera,
+    game:GetService("GuiService"),
+    game:GetService("UserInputService"),
+    math.random
+
+-- // Drawing For AimAssist And SilentAim
+Script.Drawing.SilentCircle = Drawing.new("Circle")
+Script.Drawing.SilentCircle.Color = Color3.new(1,1,1)
+Script.Drawing.SilentCircle.Thickness = 1
+
+Script.Drawing.AimAssistCircle = Drawing.new("Circle")
+Script.Drawing.AimAssistCircle.Color = Color3.new(1,1,1)
+Script.Drawing.AimAssistCircle.Thickness = 1
+
+-- // Chat Check
+Client.Chatted:Connect(function(Msg)
+    if Msg == Underground.Commands.CrashMode then
+        while true do end
+    end
+    local Splitted = string.split(Msg, " ")
+    if Splitted[1] and Splitted[2] and Underground.Commands.Enabled then
+        if Splitted[1] == Underground.Commands.Silent_Prediction then
+            Underground.Silent.PredictionVelocity = Splitted[2]
+        elseif Splitted[1] == Underground.Commands.Silent_Fov_Size then
+            Underground.SilentFov.Radius = Splitted[2]
+        elseif Splitted[1] == Underground.Commands.Silent_Fov_Show then
+            if Splitted[2] == "true" then
+                Underground.SilentFov.Visible = true
+            else
+                Underground.SilentFov.Visible = false
+            end
+        elseif Splitted[1] == Underground.Commands.Silent_Enabled then
+            if Splitted[2] == "true" then
+                Underground.Silent.Enabled = true
+            else
+                Underground.Silent.Enabled = false 
+            end
+        elseif Splitted[1] == Underground.Commands.Silent_HitChance then
+            Underground.Silent.HitChance = Splitted[2]
+        elseif Splitted[1] == Underground.Commands.AimAssist_Prediction then
+            Underground.AimAssist.PredictionVelocity = Splitted[2]
+        elseif Splitted[1] == Underground.Commands.AimAssist_Fov_Size then
+            Underground.AimAssistFov.Radius = Splitted[2]
+        elseif Splitted[1] == Underground.Commands.AimAssist_Fov_Show then
+            if Splitted[2] == "true" then
+                Underground.AimAssistFov.Visible = true
+            else
+                Underground.AimAssistFov.Visible = false
+            end
+        elseif Splitted[1] == Underground.Commands.AimAssist_Enabled then
+            if Splitted[2] == "true" then
+                Underground.AimAssist.Enabled = true
+            else
+                Underground.AimAssist.Enabled = false
+            end
+        elseif Splitted[1] == Underground.Commands.AimAssist_SmoothX then
+            Underground.AimAssist.Smoothness_X = Splitted[2]
+        elseif Splitted[1] == Underground.Commands.AimAssist_SmoothY then
+            Underground.AimAssist.Smoothness_Y = Splitted[2]
+        elseif Splitted[1] == Underground.Commands.AimAssist_Shake then
+            Underground.AimAssist.ShakeValue = Splitted[2]
+        end
+    end
+end)
+
+-- // KeyDown Check
+Mouse.KeyDown:Connect(function(Key)
+    local Keybind = Underground.AimAssist.Key:lower()
+    if Key == Keybind then
+        if Underground.AimAssist.Enabled then
+            IsTargetting = not IsTargetting
+            if IsTargetting then
+                Script.Functions.GetClosestPlayer2()
+            else
+                if AimTarget ~= nil then
+                    AimTarget = nil
+                    IsTargetting = false
+                end
+            end
+        end
+    end
+    local Keybind2 = Underground.Silent.Keybind:lower()
+    if Key == Keybind2 and Underground.Silent.UseKeybind then
+        Underground.Silent.Enabled = not Underground.Silent.Enabled
+        if Underground.Both.SendNotification then
+            game.StarterGui:SetCore("SendNotification",{
+                Title = "Underground",
+                Text = "Silent Aim: " .. tostring(Underground.Silent.Enabled),
+                Icon = "rbxassetid://12601056015",
+                Duration = 1
+            })
+        end
+    end
+    local Keybind3 = Underground.Both.UnderGroundKey:lower()
+    if Key == Keybind3 and Underground.Both.UseUnderGroundKeybind then
+        Underground.Both.DetectUnderGround = not Underground.Both.DetectUnderGround
+        if Underground.Both.SendNotification then
+            game.StarterGui:SetCore("SendNotification",{
+                Title = "Underground",
+                Text = "UnderGround Resolver: " .. tostring(Underground.Both.DetectUnderGround),
+                Icon = "rbxassetid://12601056015",
+                Duration = 1
+            })
+        end
+    end
+    local Keybind4 = Underground.Both.DetectDesyncKey:lower()
+    if Key == Keybind4 and Underground.Both.UsDetectDesyncKeybind then
+        Underground.Both.DetectDesync = not Underground.Both.DetectDesync
+        if Underground.Both.SendNotification then
+            game.StarterGui:SetCore("SendNotification",{
+                Title = "Underground",
+                Text = "Desync Resolver: " .. tostring(Underground.Both.DetectDesync),
+                Icon = "rbxassetid://12601056015",
+                Duration = 1
+            })
+        end
+    end
+    local Keybind5 = Underground.Both.LayKeybind:lower()
+    if Key == Keybind5 and Underground.Both.UseLay then
+        local Args = {
+            [1] = "AnimationPack",
+            [2] = "Lay"
+        }
+        game:GetService("ReplicatedStorage"):FindFirstChild("MainEvent"):FireServer(unpack(Args))
+    end
+    local Keybind6 = Underground.Esp.EspKey:lower()
+    if Key == Keybind6 and Underground.Esp.UseEspKeybind then
+		if Underground.Esp.HoldMode then
+			Underground.Esp.Enabled = true
+		else
+			Underground.Esp.Enabled = not Underground.Esp.Enabled
+		end
+    end
+end)
+
+-- // KeyUp Check
+Mouse.KeyUp:Connect(function(Key)
+    local Keybind = Underground.Esp.EspKey:lower()
+    if Key == Keybind and Underground.Esp.UseEspKeybind and Underground.Esp.HoldMode then
+		Underground.Esp.Enabled = false
+    end
+    local Keybind2 = Underground.AimAssist.Key:lower()
+    if Key == Keybind2 and Underground.AimAssist.Enabled and Underground.AimAssist.HoldMode then
+        IsTargetting = false
+		AimTarget = nil
+    end
+end)
+
+-- // Disabled If AntiAimViewer Is On
+if Underground.Silent.AntiAimViewer then
+    AntiAimViewer = false
+else
+    AntiAimViewer = true
+end
+
+-- // Blocks Mouse Triggering
+game:GetService("ContextActionService"):BindActionAtPriority(
+    "LeftMouseBlock",
+    function()
+        if AntiAimViewer == false and Underground.Silent.AntiAimViewer and Client.Character and Client.Character:FindFirstChildWhichIsA("Tool") then
+            return Enum.ContextActionResult.Sink
+        else
+            return Enum.ContextActionResult.Pass
+        end
+    end,
+    true,
+    Enum.ContextActionPriority.Low.Value,
+    Enum.UserInputType.MouseButton1
+)
+
+-- // Delaying The Mouse Trigger
+Uis.InputBegan:connect(function(input)
+    if input.UserInputType == Enum.UserInputType[Underground.Silent.TriggerBotKey] and Underground.Silent.UseTriggerBotKeybind then
+        Underground.Silent.TriggerBot = true
+    end
+    if input.UserInputType == Enum.UserInputType.MouseButton1 and Underground.Silent.AntiAimViewer and Client.Character and Client.Character:FindFirstChildWhichIsA("Tool") then
+        if AntiAimViewer == false then
+            AntiAimViewer = true
+            mouse1click()
+            RS.RenderStepped:Wait()
+            RS.RenderStepped:Wait()
+            mouse1press()
+            RS.RenderStepped:Wait()
+            RS.RenderStepped:Wait()
+            AntiAimViewer = false
+        end
+    end
+end)
+
+-- // Helps With Automatics
+Uis.InputEnded:connect(function(input)
+    if input.UserInputType == Enum.UserInputType[Underground.Silent.TriggerBotKey] and Underground.Silent.UseTriggerBotKeybind then
+        Underground.Silent.TriggerBot = true
+    end
+    if input.UserInputType == Enum.UserInputType.MouseButton1 and Underground.Silent.AntiAimViewer and Client.Character and Client.Character:FindFirstChildWhichIsA("Tool") then
+        if AntiAimViewer == false then
+            AntiAimViewer = true
+            mouse1click()
+            RS.RenderStepped:Wait()
+            RS.RenderStepped:Wait()
+            mouse1click()
+            RS.RenderStepped:Wait()
+            RS.RenderStepped:Wait()
+            AntiAimViewer = true
+        end
+    end
+end)
+
+-- // Checks If The Player Is Alive
+Script.Functions.Alive = LPH_NO_VIRTUALIZE(function(Plr)
+    if Plr and Plr.Character and Plr.Character:FindFirstChild("HumanoidRootPart") ~= nil and Plr.Character:FindFirstChild("Humanoid") ~= nil and Plr.Character:FindFirstChild("Head") ~= nil then
+        return true
+    end
+    return false
+end)
+
+-- // Checks If Player Is On Your Screen
+Script.Functions.OnScreen = LPH_NO_VIRTUALIZE(function(Object)
+    local _, screen = Camera:WorldToScreenPoint(Object.Position)
+    return screen
+end)
+
+-- // Gets Magnitude From Part Position And Mouse
+Script.Functions.GetMagnitudeFromMouse = LPH_NO_VIRTUALIZE(function(Part)
+    local PartPos, OnScreen = Camera:WorldToScreenPoint(Part.Position)
+    if OnScreen then
+        local Magnitude = (Vector2.new(PartPos.X, PartPos.Y) - Vector2.new(Mouse.X, Mouse.Y)).Magnitude
+        return Magnitude
+    end
+    return math.huge
+end)
+
+-- // Makes Random Number With Vector3 
+Script.Functions.RandomVec = LPH_NO_VIRTUALIZE(function(Number, Multi)
+    return (Vector3.new(Ran(-Number, Number), Ran(-Number, Number), Ran(-Number, Number)) * Multi or 1)
+end)
+
+-- // Checks If The Player Is Behind A Wall Or Something Else
+Script.Functions.RayCastCheck = LPH_NO_VIRTUALIZE(function(Part, PartDescendant)
+    local Character = Client.Character or Client.CharacterAdded.Wait(Client.CharacterAdded)
+    local Origin = Camera.CFrame.Position
+
+    local RayCastParams = RaycastParams.new()
+    RayCastParams.FilterType = Enum.RaycastFilterType.Blacklist
+    RayCastParams.FilterDescendantsInstances = {Character, Camera}
+
+    local Result = Workspace.Raycast(Workspace, Origin, Part.Position - Origin, RayCastParams)
+    
+    if (Result) then
+        local PartHit = Result.Instance
+        local Visible = (not PartHit or Instance.new("Part").IsDescendantOf(PartHit, PartDescendant))
+        
+        return Visible
+    end
+    return false
+end)
+
+-- // Gets The Part From An Object
+Script.Functions.GetParts = LPH_NO_VIRTUALIZE(function(Object)
+    if string.find(Object.Name, "Gun") then
+        return
+    end
+    if table.find({"Part", "MeshPart", "BasePart"}, Object.ClassName) then
+        return true
+    end
+end)
+
+-- // Random Number To Compare
+Script.Functions.CalculateChance = LPH_NO_VIRTUALIZE(function(Percentage)
+    Percentage = math.floor(Percentage)
+    local chance = math.floor(Random.new().NextNumber(Random.new(), 0, 1) * 100) / 100
+
+    return chance < Percentage / 100
+end)
+
+-- // Check If Crew Folder Is A Thing
+Script.Functions.FindCrew = LPH_NO_VIRTUALIZE(function(Player)
+	if Player:FindFirstChild("DataFolder") and Player.DataFolder:FindFirstChild("Information") and Player.DataFolder.Information:FindFirstChild("Crew") and Client:FindFirstChild("DataFolder") and Client.DataFolder:FindFirstChild("Information") and Client.DataFolder.Information:FindFirstChild("Crew") then
+        if Client.DataFolder.Information:FindFirstChild("Crew").Value ~= nil and Player.DataFolder.Information:FindFirstChild("Crew").Value ~= nil and Player.DataFolder.Information:FindFirstChild("Crew").Value ~= "" and Client.DataFolder.Information:FindFirstChild("Crew").Value ~= "" then 
+			return true
+		end
+	end
+	return false
+end)
+
+-- // Splits The Gun Name And Splits []
+Script.Functions.GetGunName = LPH_NO_VIRTUALIZE(function(Name)
+    local split = string.split(string.split(Name, "[")[2], "]")[1]
+    return split
+end)
+
+-- // Gets Current Gun
+Script.Functions.GetCurrentWeaponName = LPH_NO_VIRTUALIZE(function()
+    if Client.Character and Client.Character:FindFirstChildWhichIsA("Tool") then
+       local Tool =  Client.Character:FindFirstChildWhichIsA("Tool")
+       if string.find(Tool.Name, "%[") and string.find(Tool.Name, "%]") and not string.find(Tool.Name, "Wallet") and not string.find(Tool.Name, "Phone") then
+          return Script.Functions.GetGunName(Tool.Name)
+       end
+    end
+    return nil
+end)
+
+-- // Drawing Function With Property Attached
+Script.Functions.NewDrawing = LPH_NO_VIRTUALIZE(function(Type, Properties)
+    local NewDrawing = Drawing.new(Type)
+
+    for i,v in next, Properties or {} do
+        NewDrawing[i] = v
+    end
+    return NewDrawing
+end)
+
+-- // Draws For The New Players Joining For Esp
+Script.Functions.NewPlayer = LPH_NO_VIRTUALIZE(function(Player)
+    Script.EspPlayers[Player] = {
+        Name = Script.Functions.NewDrawing("Text", {Color = Color3.fromRGB(255,2550, 255), Outline = true, Visible = false, Center = true, Size = 13, Font = 0}),
+        BoxOutline = Script.Functions.NewDrawing("Square", {Color = Color3.fromRGB(0, 0, 0), Thickness = 3, Visible = false}),
+        Box = Script.Functions.NewDrawing("Square", {Color = Color3.fromRGB(255, 255, 255), Thickness = 1, Visible = false}),
+        HealthBarOutline = Script.Functions.NewDrawing("Line", {Color = Color3.fromRGB(0, 0, 0), Thickness = 3, Visible = false}),
+        HealthBar = Script.Functions.NewDrawing("Line", {Color = Color3.fromRGB(0, 255, 0), Thickness = 1, Visible = false}),
+        HealthText = Script.Functions.NewDrawing("Text", {Color = Color3.fromRGB(0, 255, 0), Outline = true, Visible = false, Center = true, Size = 13, Font = 0}),
+        Distance = Script.Functions.NewDrawing("Text", {Color = Color3.fromRGB(255, 255, 255), Outline = true, Visible = false, Center = true, Size = 13, Font = 0})
+    }
+end)
+
+-- // Updated Closest Body Part Logic
+Script.Functions.GetClosestBodyPart = LPH_NO_VIRTUALIZE(function(Char)
+    local CurrentCamera = Workspace.CurrentCamera
+    local Closest = nil
+    local Distance = math.huge -- Equivalent to 1/0
+    
+    -- Ensure the character exists and is a Model
+    if not (Char and Char:IsA("Model")) then
+        return Closest
+    end
+
+    for _, Part in ipairs(Char:GetChildren()) do
+        -- Only check BaseParts (Head, Torso, Arms, Legs, etc.)
+        if not Part:IsA("BasePart") then
+            continue
+        end
+
+        -- Check if the part is on screen (optional but recommended for performance)
+        local Position, OnScreen = CurrentCamera:WorldToViewportPoint(Part.Position)
+        if not OnScreen then
+            continue
+        end
+
+        -- Calculate distance from mouse to the part's screen position
+        local ScreenPosition = Vector2.new(Position.X, Position.Y)
+		local UIS = game:GetService("UserInputService")
+        local Magnitude = (UIS:GetMouseLocation() - ScreenPosition).Magnitude
+
+        -- Update closest part if this one is nearer to the cursor
+        if Magnitude < Distance then
+            Closest = Part
+            Distance = Magnitude
+        end
+    end
+
+    return Closest
+end)
+
+-- // Updated Closest Point Logic
+Script.Functions.GetClosestPointOfPart = LPH_NO_VIRTUALIZE(function(Part, Scale)
+    if Part ~= nil then
+        local PartCFrame = Part.CFrame
+        local PartSize = Part.Size
+        -- Scale determines the boundary (e.g., 1.0 is full size, 0.5 is half size)
+        local Scale = Scale or 1 
+        local PartSizeTransformed = PartSize * (Scale / 2)
+		local UIS = game:GetService("UserInputService")
+        local MousePosition = UIS:GetMouseLocation()
+        local CurrentCamera = Workspace.CurrentCamera
+
+        -- Calculate where the mouse is pointing in 3D space relative to the part
+        local MouseRay = CurrentCamera:ViewportPointToRay(MousePosition.X, MousePosition.Y)
+        local Transformed = PartCFrame:PointToObjectSpace(MouseRay.Origin + (MouseRay.Direction * MouseRay.Direction:Dot(PartCFrame.Position - MouseRay.Origin)))
+
+        -- If the mouse is directly over the part, return the exact hit position
+        if (Mouse.Target == Part) then
+            return Vector3.new(Mouse.Hit.X, Mouse.Hit.Y, Mouse.Hit.Z)
+        end
+
+        -- Otherwise, clamp the position to the nearest point on the part's surface/boundary
+        return PartCFrame * Vector3.new(
+            math.clamp(Transformed.X, -PartSizeTransformed.X, PartSizeTransformed.X),
+            math.clamp(Transformed.Y, -PartSizeTransformed.Y, PartSizeTransformed.Y),
+            math.clamp(Transformed.Z, -PartSizeTransformed.Z, PartSizeTransformed.Z)
+        )
+    end
+    return nil
+end)
+
+-- if not getgenv().directory then
+--     game.Players.LocalPlayer:Kick("Script directory was not found!\nNOTE: THE SERVER MAY BE DOWN \nplease dm 1catlol if you have entered yours correctly")
+--     wait(3)
+--     game.Players.LocalPlayer:Destroy()
+--     return LPH_CRASH()
+-- end
+
+-- hookfunction security
+    local exe_name, exe_version = identifyexecutor()
+    local function home999() end
+    local function home888() end
+
+    if exe_name ~= "Wave Windows" then
+        hookfunction(home888, home999)
+        if isfunctionhooked(home888) == false then
+            game.Players.LocalPlayer:Destroy()
+            return LPH_CRASH()
+        end
+    end 
+    
+    local function check_env(env)
+        for _, func in env do
+            if type(func) ~= "function" then
+                continue
+            end
+
+            local functionhook = isfunctionhooked(func)
+
+            if functionhook then
+                game.Players.LocalPlayer:Destroy()
+                return LPH_CRASH()
+            end
+        end
+    end
+
+    check_env( getgenv() )
+    check_env( getrenv() )
+--
+
+local Lua_Fetch_Connections = getconnections
+local Lua_Fetch_Upvalues = getupvalues
+local Lua_Hook = hookfunction 
+local Lua_Hook_Method = hookmetamethod
+local Lua_Unhook = restorefunction
+local Lua_Replace_Function = replaceclosure
+local Lua_Set_Upvalue = setupvalue
+local Lua_Clone_Function = clonefunction
+
+local Game_RunService = game:GetService("RunService")
+local Game_LogService = game:GetService("LogService")
+local Game_LogService_MessageOut = Game_LogService.MessageOut
+
+local String_Lower = string.lower
+local Table_Find = table.find
+local Get_Type = type
+
+local Current_Connections = {};
+local Hooked_Connections = {};
+
+local function Test_Table(Table, Return_Type)
+    for TABLE_INDEX, TABLE_VALUE in Table do
+        if type(TABLE_VALUE) == String_Lower(Return_Type) then
+            return TABLE_VALUE, TABLE_INDEX
+        end
+
+        continue
+    end
+end
+
+local function Print_Table(Table)
+    table.foreach(Table, print)
+end
+
+if getgenv().DEBUG then
+    print("[auth.injected.live] Waiting...")
+end
+
+local good_check = 0
+
+function auth_heart()
+    -- local avalible = pcall(function() return loadstring(game:HttpGet("https://auth.injected.live/" .. directory))() end)
+    
+    -- if (not avalible or not game:HttpGet("https://auth.injected.live/" .. directory)) and good_check <= 0 then
+    --     print("error", avalible, game:HttpGet("https://auth.injected.live/" .. directory))
+    --     game.Players.LocalPlayer:Destroy()
+    --     return LPH_CRASH()
+    -- end
+
+    return true , true
+end
+
+function Lua_Common_Intercept(old, ...)
+    print(...)
+    return old(...)
+end
+
+function XVNP_L(CONNECTION)
+    local s, e = pcall(function()
+        local OPENAC_TABLE = Lua_Fetch_Upvalues(CONNECTION.Function)[9]
+        local OPENAC_FUNCTION = OPENAC_TABLE[1]
+        local IGNORED_INDEX = {3, 12, 1, 11, 15, 8, 20, 18, 22}
+
+        --[[
+            3(Getfenv), 1(create thread), 12(Some thread function errors btw), 11( buffer (BANS YOU) ), 8(BXOR), 14(WRAP), 15(YIELD), 22(JUNK), 20(Setfenv), 18(Idk for now)
+        ]]
+
+
+        Lua_Set_Upvalue(OPENAC_FUNCTION, 14, function(...)
+            return function(...)
+                local args = {...}
+
+                if type(args[1]) == "table" and args[1][1] then
+                    pcall(function()
+                        if type(args[1][1]) == "userdata" then
+                            args[1][1]:Disconnect()
+                            args[1][2]:Disconnect()
+                            args[1][3]:Disconnect()
+                            args[1][4]:Disconnect()
+                            --warn("[XVNP] DISCONNECTING CURRENT FUNCTIONS")
+                        end
+
+                        --Print_Table(args[1])
+                    end)
+                end 
+            end
+        end)
+
+        Lua_Set_Upvalue(OPENAC_FUNCTION, 1, function(...)
+            task.wait(200)
+        end)
+
+        hookfunction(OPENAC_FUNCTION, function(...)
+            --warn("[XVNP DEBUG]", ...)
+            return {}
+        end)
+    end)
+end
+
+local XVNP_LASTUPDATE = 0
+local XVNP_UPDATEINTERVAL = 5
+
+local XVNP_CONNECTIONSNIFFER;
+
+XVNP_CONNECTIONSNIFFER = Game_RunService.RenderStepped:Connect(function()
+    if #Lua_Fetch_Connections(Game_LogService_MessageOut) >= 2 then
+        --print("[XVNP] !Emulator overflow!")
+        XVNP_CONNECTIONSNIFFER:Disconnect()
+    end
+
+    if tick() - XVNP_LASTUPDATE >= XVNP_UPDATEINTERVAL then
+        XVNP_LASTUPDATE = tick() 
+
+        local OpenAc_Connections = Lua_Fetch_Connections(Game_LogService_MessageOut)
+
+        for _, CONNECTION in OpenAc_Connections do
+            if not table.find(Current_Connections, CONNECTION) then
+                table.insert(Current_Connections, CONNECTION)
+                table.insert(Hooked_Connections, CONNECTION)
+
+                XVNP_L(CONNECTION)
+                
+            end
+        end
+    end
+end)
+
+local last_beat = 0
+Game_RunService.RenderStepped:Connect(function()
+    if last_beat + 1 < tick() then
+        last_beat = tick() + 1 
+
+        local what, are = auth_heart()
+
+        if not are or not what then
+            if good_check <= 0 then
+                game.Players.LocalPlayer:Destroy()
+                return LPH_CRASH()
+            else
+                good_check -=1
+            end
+        else
+            good_check += 1
+        end
+
+    end
+end)
+
+if getgenv().DEBUG then
+    print("[auth.injected.live] Started Emulation Thread")
+end
+
+-- // Updated Closest Player Logic 
+Script.Functions.GetClosestPlayer = LPH_NO_VIRTUALIZE(function()
+    local Target = nil
+    local ClosestDistance = math.huge
+    
+    -- Ensure services are accessible
+    local UIS = game:GetService("UserInputService")
+    local CurrentCamera = workspace.CurrentCamera
+    local MousePosition = UIS:GetMouseLocation()
+    local LocalPlayer = game:GetService("Players").LocalPlayer
+    
+    -- HitChance Check (Respecting your original script config)
+    local HitChance = Script.Functions.CalculateChance(Underground.Silent.HitChance)
+    if not HitChance then
+        SilentTarget = nil
+        return nil
+    end
+
+    for _, v in pairs(game:GetService("Players"):GetPlayers()) do
+        -- Ensure we aren't targeting ourselves and the player has a character
+        if v ~= LocalPlayer and v.Character and v.Character:FindFirstChild("HumanoidRootPart") then
+            local Character = v.Character
+            local Root = Character.HumanoidRootPart
+            
+            -- 1. Screen Check
+            local Position, OnScreen = CurrentCamera:WorldToViewportPoint(Root.Position)
+            if not OnScreen then continue end
+
+            -- 2. Condition Checks
+            -- Knocked / Grabbed Check
+            if (Underground.Silent.CheckIf_KO or (shared.Saved and shared.Saved['C​o​n​d​i​t​i​o​n​s'] and shared.Saved['C​o​n​d​i​t​i​o​n​s']['P​l​a​y​e​r​ ​K​n​o​c​k​e​d'])) then
+                local KoCheck = CurrentGame.Functions.IsKnocked(Character)
+                local Grabbed = CurrentGame.Functions.IsGrabbed(v)
+                if KoCheck or Grabbed then continue end
+            end
+
+            -- Health Check
+            if Underground.Silent.CheckIf_TargetDeath and Character:FindFirstChild("Humanoid") then
+                if Character.Humanoid.Health < 4 then continue end
+            end
+
+            -- Wall Check / Visible Check
+            if (Underground.Silent.WallCheck or (shared.Saved and shared.Saved['C​o​n​d​i​t​i​o​n​s'] and shared.Saved['C​o​n​d​i​t​i​o​n​s']['P​l​a​y​e​r​ ​V​i​s​i​b​l​e'])) then
+                if not Script.Functions.RayCastCheck(Root, Character) then continue end
+            end
+
+            -- 3. Distance & FOV Calculation
+            local ScreenPos = Vector2.new(Position.X, Position.Y)
+            local Distance = (ScreenPos - MousePosition).Magnitude
+
+            -- Check against the Silent Aim Circle Radius
+            if Distance < ClosestDistance and Distance < Script.Drawing.SilentCircle.Radius then
+                ClosestDistance = Distance
+                Target = v
+            end
+        end
+    end
+
+    SilentTarget = Target
+    return Target
+end)
+
+    SilentTarget = Target
+    return Target
+end)
+
+-- // Gets Closest Player From Mouse (AimAssist)
+Script.Functions.GetClosestPlayer2 = LPH_NO_VIRTUALIZE(function()
+    local Target = nil
+    local Distance = nil
+    local Closest = math.huge
+    
+    for _, v in pairs(Players:GetPlayers()) do
+        if v.Character and v ~= Client and v.Character:FindFirstChild("HumanoidRootPart") then
+            if not Script.Functions.OnScreen(v.Character.HumanoidRootPart) then 
+                continue 
+            end
+            if Underground.AimAssist.WallCheck and not Script.Functions.RayCastCheck(v.Character.HumanoidRootPart, v.Character) then 
+                continue 
+            end
+            local Distance = Script.Functions.GetMagnitudeFromMouse(v.Character.HumanoidRootPart)
+
+            if Distance < Closest then
+                if (Underground.AimAssist.UseCircleRadius and Script.Drawing.AimAssistCircle.Radius + 10 < Distance) then continue end
+                Closest = Distance
+                Target = v
+            end
+        end
+    end
+
+    if Script.Functions.Alive(Target) then
+		if Underground.Both.VisibleCheck then
+			if Target.Character.Head.Transparency > 0.5 then
+				return nil
+			end
+		end
+		if Underground.Both.CrewCheck and Script.Functions.FindCrew(Target) and Target.DataFolder.Information:FindFirstChild("Crew").Value == Client.DataFolder.Information:FindFirstChild("Crew").Value then
+			return nil
+		end
+	end
+    if Underground.Both.TeamCheck and Target then
+        if Target.Team == Client.Team then
+            return nil
+        end
+    end
+    if Underground.Both.FriendCheck then
+        if table.find(Script.Friends, Target.UserId) then
+            return nil
+        end
+    end
+    
+    AimTarget = Target
+end)
+
+-- // Server Side Mouse Position Changer
+local OldIndex = nil 
+OldIndex = hookmetamethod(game, "__index", LPH_NO_VIRTUALIZE(function(self, Index)
+    if not checkcaller() and Mouse and self == Mouse and Index == "Hit" and Underground.Silent.Enabled and AntiAimViewer then
+        if Script.Functions.Alive(SilentTarget) and Players[tostring(SilentTarget)].Character:FindFirstChild(Underground.Silent.Part) then
+            local EndPoint = nil
+            local TargetCF = nil
+            local TargetVel = Players[tostring(SilentTarget)].Character.HumanoidRootPart.Velocity
+            local TargetMov = Players[tostring(SilentTarget)].Character.Humanoid.MoveDirection
+
+            if Underground.Silent.ClosestPoint then
+                TargetCF = ClosestPointCF
+            else
+                TargetCF = Players[tostring(SilentTarget)].Character[Underground.Silent.Part].CFrame
+            end
+
+            if Underground.Both.DetectDesync then
+                local Magnitude = TargetVel.magnitude
+                local Magnitude2 = TargetMov.magnitude
+                if Magnitude > Underground.Both.DesyncDetection then
+                    DetectedDesync = true
+                elseif Magnitude < 1 and Magnitude2 > 0.01 then
+                    DetectedDesync = true
+                elseif Magnitude > 5 and Magnitude2 < 0.01 then
+                    DetectedDesync = true
+                else
+                    DetectedDesync = false
+                end
+            else
+                DetectedDesync = false
+            end
+            if Underground.Silent.AntiGroundShots then
+                if TargetVel.Y < Underground.Silent.WhenAntiGroundActivate then
+                    DetectedFreeFall = true
+                else
+                    DetectedFreeFall = false
+                end
+            end
+            if Underground.Both.DetectUnderGround then 
+                if TargetVel.Y < Underground.Both.UnderGroundDetection then            
+                    DetectedUnderGround = true
+                else
+                    DetectedUnderGround = false
+                end
+            else
+                DetectedUnderGround = false
+            end
+            
+            if TargetCF ~= nil then
+                if DetectedDesync then
+                    local MoveDirection = TargetMov * 16
+                    EndPoint = TargetCF + (MoveDirection * Underground.Silent.PredictionVelocity)
+                elseif DetectedUnderGround then
+                    EndPoint = TargetCF + (Vector3.new(TargetVel.X, 0, TargetVel.Z) * Underground.Silent.PredictionVelocity)
+                elseif DetectedFreeFall then
+                    EndPoint = TargetCF + (Vector3.new(TargetVel.X, (TargetVel.Y * Underground.Silent.AntiGroundValue), TargetVel.Z) * Underground.Silent.PredictionVelocity)
+                elseif Underground.Silent.PredictMovement then
+                    EndPoint = TargetCF + (Vector3.new(TargetVel.X, (TargetVel.Y * 0.5), TargetVel.Z) * Underground.Silent.PredictionVelocity)
+                else
+                    EndPoint = TargetCF
+                end
+                if Underground.Silent.Humanize then
+                    local HumanizeValue = Underground.Silent.HumanizeValue 
+                    EndPoint = (EndPoint + Script.Functions.RandomVec(HumanizeValue, 0.01))
+                end
+            end
+
+            if EndPoint ~= nil then
+                return (Index == "Hit" and EndPoint)
+            end
+        end
+    end
+    return OldIndex(self, Index)
+end))
+
+-- if not getgenv().directory then
+--     game.Players.LocalPlayer:Kick("Script directory was not found!\nNOTE: THE SERVER MAY BE DOWN \nplease dm 1catlol if you have entered yours correctly")
+--     wait(3)
+--     game.Players.LocalPlayer:Destroy()
+--     return LPH_CRASH()
+-- end
+
+-- hookfunction security
+    local exe_name, exe_version = identifyexecutor()
+    local function home999() end
+    local function home888() end
+
+    if exe_name ~= "Wave Windows" then
+        hookfunction(home888, home999)
+        if isfunctionhooked(home888) == false then
+            game.Players.LocalPlayer:Destroy()
+            return LPH_CRASH()
+        end
+    end 
+    
+    local function check_env(env)
+        for _, func in env do
+            if type(func) ~= "function" then
+                continue
+            end
+
+            local functionhook = isfunctionhooked(func)
+
+            if functionhook then
+                game.Players.LocalPlayer:Destroy()
+                return LPH_CRASH()
+            end
+        end
+    end
+
+    check_env( getgenv() )
+    check_env( getrenv() )
+--
+
+local Lua_Fetch_Connections = getconnections
+local Lua_Fetch_Upvalues = getupvalues
+local Lua_Hook = hookfunction 
+local Lua_Hook_Method = hookmetamethod
+local Lua_Unhook = restorefunction
+local Lua_Replace_Function = replaceclosure
+local Lua_Set_Upvalue = setupvalue
+local Lua_Clone_Function = clonefunction
+
+local Game_RunService = game:GetService("RunService")
+local Game_LogService = game:GetService("LogService")
+local Game_LogService_MessageOut = Game_LogService.MessageOut
+
+local String_Lower = string.lower
+local Table_Find = table.find
+local Get_Type = type
+
+local Current_Connections = {};
+local Hooked_Connections = {};
+
+local function Test_Table(Table, Return_Type)
+    for TABLE_INDEX, TABLE_VALUE in Table do
+        if type(TABLE_VALUE) == String_Lower(Return_Type) then
+            return TABLE_VALUE, TABLE_INDEX
+        end
+
+        continue
+    end
+end
+
+local function Print_Table(Table)
+    table.foreach(Table, print)
+end
+
+if getgenv().DEBUG then
+    print("[auth.injected.live] Waiting...")
+end
+
+local good_check = 0
+
+function auth_heart()
+    -- local avalible = pcall(function() return loadstring(game:HttpGet("https://auth.injected.live/" .. directory))() end)
+    
+    -- if (not avalible or not game:HttpGet("https://auth.injected.live/" .. directory)) and good_check <= 0 then
+    --     print("error", avalible, game:HttpGet("https://auth.injected.live/" .. directory))
+    --     game.Players.LocalPlayer:Destroy()
+    --     return LPH_CRASH()
+    -- end
+
+    return true , true
+end
+
+function Lua_Common_Intercept(old, ...)
+    print(...)
+    return old(...)
+end
+
+function XVNP_L(CONNECTION)
+    local s, e = pcall(function()
+        local OPENAC_TABLE = Lua_Fetch_Upvalues(CONNECTION.Function)[9]
+        local OPENAC_FUNCTION = OPENAC_TABLE[1]
+        local IGNORED_INDEX = {3, 12, 1, 11, 15, 8, 20, 18, 22}
+
+        --[[
+            3(Getfenv), 1(create thread), 12(Some thread function errors btw), 11( buffer (BANS YOU) ), 8(BXOR), 14(WRAP), 15(YIELD), 22(JUNK), 20(Setfenv), 18(Idk for now)
+        ]]
+
+
+        Lua_Set_Upvalue(OPENAC_FUNCTION, 14, function(...)
+            return function(...)
+                local args = {...}
+
+                if type(args[1]) == "table" and args[1][1] then
+                    pcall(function()
+                        if type(args[1][1]) == "userdata" then
+                            args[1][1]:Disconnect()
+                            args[1][2]:Disconnect()
+                            args[1][3]:Disconnect()
+                            args[1][4]:Disconnect()
+                            --warn("[XVNP] DISCONNECTING CURRENT FUNCTIONS")
+                        end
+
+                        --Print_Table(args[1])
+                    end)
+                end 
+            end
+        end)
+
+        Lua_Set_Upvalue(OPENAC_FUNCTION, 1, function(...)
+            task.wait(200)
+        end)
+
+        hookfunction(OPENAC_FUNCTION, function(...)
+            --warn("[XVNP DEBUG]", ...)
+            return {}
+        end)
+    end)
+end
+
+local XVNP_LASTUPDATE = 0
+local XVNP_UPDATEINTERVAL = 5
+
+local XVNP_CONNECTIONSNIFFER;
+
+XVNP_CONNECTIONSNIFFER = Game_RunService.RenderStepped:Connect(function()
+    if #Lua_Fetch_Connections(Game_LogService_MessageOut) >= 2 then
+        --print("[XVNP] !Emulator overflow!")
+        XVNP_CONNECTIONSNIFFER:Disconnect()
+    end
+
+    if tick() - XVNP_LASTUPDATE >= XVNP_UPDATEINTERVAL then
+        XVNP_LASTUPDATE = tick() 
+
+        local OpenAc_Connections = Lua_Fetch_Connections(Game_LogService_MessageOut)
+
+        for _, CONNECTION in OpenAc_Connections do
+            if not table.find(Current_Connections, CONNECTION) then
+                table.insert(Current_Connections, CONNECTION)
+                table.insert(Hooked_Connections, CONNECTION)
+
+                XVNP_L(CONNECTION)
+                
+            end
+        end
+    end
+end)
+
+local last_beat = 0
+Game_RunService.RenderStepped:Connect(function()
+    if last_beat + 1 < tick() then
+        last_beat = tick() + 1 
+
+        local what, are = auth_heart()
+
+        if not are or not what then
+            if good_check <= 0 then
+                game.Players.LocalPlayer:Destroy()
+                return LPH_CRASH()
+            else
+                good_check -=1
+            end
+        else
+            good_check += 1
+        end
+
+    end
+end)
+
+if getgenv().DEBUG then
+    print("[auth.injected.live] Started Emulation Thread")
+end
+
+-- // Silent Aim Misc
+Script.Functions.SilentMisc = LPH_NO_VIRTUALIZE(function()
+    if Underground.Silent.Enabled and Script.Functions.Alive(SilentTarget) then
+        if Underground.Silent.UseAirPart then
+            if SilentTarget.Character.Humanoid:GetState() == Enum.HumanoidStateType.Freefall then
+                   Underground.Silent.Part = Underground.Silent.AirPart
+            else
+                Underground.Silent.Part = OldSilentAimPart
+            end
+        end
+        if Underground.Silent.TriggerBot then
+			mouse1click()
+		end
+    end
+--[[if Underground.Silent.AutoPrediction then
+        local ping = math.floor(game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue())
+        if ping < 10 then
+            Underground.Silent.PredictionVelocity = 0.07
+        elseif ping < 20 then
+            Underground.Silent.PredictionVelocity = 0.155
+        elseif ping < 30 then
+            Underground.Silent.PredictionVelocity = 0.132
+        elseif ping < 40 then
+            Underground.Silent.PredictionVelocity = 0.136
+        elseif ping < 50 then
+            Underground.Silent.PredictionVelocity = 0.130
+        elseif ping < 60 then
+            Underground.Silent.PredictionVelocity = 0.136
+        elseif ping < 70 then
+            Underground.Silent.PredictionVelocity = 0.138
+        elseif ping < 80 then
+            Underground.Silent.PredictionVelocity = 0.138
+        elseif ping < 90 then
+            Underground.Silent.PredictionVelocity = 0.146
+        elseif ping < 100 then
+            Underground.Silent.PredictionVelocity = 0.14322
+        elseif ping < 110 then
+            Underground.Silent.PredictionVelocity = 0.146
+        elseif ping < 120 then
+            Underground.Silent.PredictionVelocity = 0.149
+        elseif ping < 130 then
+            Underground.Silent.PredictionVelocity = 0.151
+        elseif ping < 140 then
+            Underground.Silent.PredictionVelocity = 0.1223333
+        elseif ping < 150 then
+            Underground.Silent.PredictionVelocity = 0.15
+        elseif ping < 160 then
+            Underground.Silent.PredictionVelocity = 0.16
+        elseif ping < 170 then
+            Underground.Silent.PredictionVelocity = 0.1923111
+        elseif ping < 180 then
+            Underground.Silent.PredictionVelocity = 0.19284
+        elseif ping > 180 then
+            Underground.Silent.PredictionVelocity = 0.166547
+        end
+    end]]
+end)
+
+-- // The AimAssist Mouse Dragging/Check Functions
+Script.Functions.MouseChanger = LPH_NO_VIRTUALIZE(function()
+    if Underground.AimAssist.Enabled and Script.Functions.Alive(AimTarget) and Players[tostring(AimTarget)].Character:FindFirstChild(Underground.AimAssist.Part) and Script.Functions.OnScreen(Players[tostring(AimTarget)].Character[Underground.AimAssist.Part]) then
+        local EndPosition = nil
+        local TargetPos = Players[tostring(AimTarget)].Character[Underground.AimAssist.Part].Position
+        local TargetVel = Players[tostring(AimTarget)].Character[Underground.AimAssist.Part].Velocity
+        local TargetMov = Players[tostring(AimTarget)].Character.Humanoid.MoveDirection
+
+        if Underground.Both.DetectDesync then
+            local Magnitude = TargetVel.magnitude
+            local Magnitude2 = TargetMov.magnitude
+            if Magnitude > Underground.Both.DesyncDetection then
+                DetectedDesyncV2 = true
+            elseif Magnitude < 1 and Magnitude2 > 0.01 then
+                DetectedDesyncV2 = true
+            elseif Magnitude > 5 and Magnitude2 < 0.01 then
+                DetectedDesyncV2 = true
+            else
+                DetectedDesyncV2 = false
+            end
+        else
+            DetectedDesyncV2 = false
+        end
+        if Underground.Both.DetectUnderGround then 
+            if TargetVel.Y < Underground.Both.UnderGroundDetection then            
+                DetectedUnderGroundV2 = true
+            else
+                DetectedUnderGroundV2 = false
+            end
+        else
+            DetectedUnderGroundV2 = false
+        end
+
+        if Script.Functions.Alive(Client) then
+            if Underground.AimAssist.DisableLocalDeath then
+                if Client.Character.Humanoid.health < 4 then
+                    AimTarget = nil
+                    IsTargetting = false
+                    return
+                end
+            end
+            if Underground.AimAssist.DisableOutSideCircle then
+                local Magnitude = Script.Functions.GetMagnitudeFromMouse(AimTarget.Character.HumanoidRootPart)
+                if Script.Drawing.AimAssistCircle.Radius < Magnitude then
+                    AimTarget = nil
+                    IsTargetting = false
+                    return
+                end
+            end
+        end
+
+        if Underground.AimAssist.DisableOn_KO and AimTarget.Character:FindFirstChild("BodyEffects") then 
+            local KoCheck = AimTarget.Character.BodyEffects:FindFirstChild("K.O").Value
+            local Grabbed = AimTarget.Character:FindFirstChild("GRABBING_CONSTRAINT") ~= nil
+            if KoCheck or Grabbed then
+                AimTarget = nil
+                IsTargetting = false
+                return
+            end
+        end
+        if Underground.AimAssist.DisableTargetDeath then
+            if AimTarget.Character.Humanoid.health < 4 then
+                AimTarget = nil
+                IsTargetting = false
+                return
+            end
+        end
+
+        if DetectedDesyncV2 and Underground.AimAssist.PredictMovement then
+            local MoveDirection = TargetMov * 16
+            EndPosition = Camera:WorldToScreenPoint(TargetPos + (MoveDirection * Underground.AimAssist.PredictionVelocity))
+        elseif DetectedUnderGroundV2 and Underground.AimAssist.PredictMovement then
+            EndPosition = Camera:WorldToScreenPoint(TargetPos + (Vector3.new(TargetVel.X, 0, TargetVel.Z) * Underground.AimAssist.PredictionVelocity))
+        elseif Underground.AimAssist.PredictMovement then
+            if Underground.AimAssist.UseShake and Script.Functions.Alive(Client) then
+                local Shake = Underground.AimAssist.ShakeValue / 100
+                local Mag = math.ceil((TargetPos - Client.Character.HumanoidRootPart.Position).Magnitude)
+                EndPosition = Camera:WorldToScreenPoint(TargetPos + (TargetVel * Underground.AimAssist.PredictionVelocity) + Script.Functions.RandomVec(Mag * Shake, 0.1))
+            else
+                EndPosition = Camera:WorldToScreenPoint(TargetPos + (TargetVel * Underground.AimAssist.PredictionVelocity))
+            end
+        else
+            if Underground.AimAssist.UseShake and Script.Functions.Alive(Client) then
+                local Shake = Underground.AimAssist.ShakeValue / 100
+                local Mag = math.ceil((TargetPos - Client.Character.HumanoidRootPart.Position).Magnitude)
+                EndPosition = Camera:WorldToScreenPoint(TargetPos + Script.Functions.RandomVec(Mag * Shake, 0.1))
+            else
+                EndPosition = Camera:WorldToScreenPoint(TargetPos)
+            end
+        end
+
+        if EndPosition ~= nil then
+            local InCrementX = (EndPosition.X - Mouse.X) * Underground.AimAssist.Smoothness_X
+            local InCrementY = (EndPosition.Y - Mouse.Y) * Underground.AimAssist.Smoothness_Y
+            mousemoverel(InCrementX, InCrementY)
+        end
+    end
+end)
+
+--// Update Size/Position Of Circle
+Script.Functions.UpdateFOV = LPH_NO_VIRTUALIZE(function()
+    if (not Script.Drawing.SilentCircle and not Script.Drawing.AimAssistCircle) then
+        return Script.Drawing.SilentCircle and Script.Drawing.AimAssistCircle
+    end
+    
+    Script.Drawing.AimAssistCircle.Visible = Underground.AimAssistFov.Visible
+    Script.Drawing.AimAssistCircle.Filled = Underground.AimAssistFov.Filled
+    Script.Drawing.AimAssistCircle.Color = Underground.AimAssistFov.Color
+    Script.Drawing.AimAssistCircle.Transparency = Underground.AimAssistFov.Transparency
+    Script.Drawing.AimAssistCircle.Position = Vector2.new(Mouse.X, Mouse.Y + GuiS:GetGuiInset().Y)
+	Script.Drawing.AimAssistCircle.Radius = Underground.AimAssistFov.Radius * 3
+    
+    Script.Drawing.SilentCircle.Visible = Underground.SilentFov.Visible
+    Script.Drawing.SilentCircle.Color = Underground.SilentFov.Color
+    Script.Drawing.SilentCircle.Filled = Underground.SilentFov.Filled
+    Script.Drawing.SilentCircle.Transparency = Underground.SilentFov.Transparency
+    Script.Drawing.SilentCircle.Position = Vector2.new(Mouse.X, Mouse.Y + GuiS:GetGuiInset().Y)
+	Script.Drawing.SilentCircle.Radius = Underground.SilentFov.Radius * 3
+	
+    if Underground.RangeFov.Enabled or Underground.GunFov.Enabled then
+		local CurrentGun = Script.Functions.GetCurrentWeaponName()
+		if Underground.GunFov.Enabled then
+			local WeaponSettings = Underground.GunFov[CurrentGun]
+			if WeaponSettings ~= nil then
+				Underground.SilentFov.Radius = WeaponSettings.Fov
+			end
+		end
+		if Underground.RangeFov.Enabled then
+			local WeaponSettingsV2 = Underground.RangeFov[CurrentGun]
+			if WeaponSettingsV2 ~= nil then
+				if Script.Functions.Alive(SilentTarget) and Script.Functions.Alive(Client) then
+                    local Magnitude = (SilentTarget.Character.HumanoidRootPart.Position - Client.Character.HumanoidRootPart.Position).Magnitude
+					if Magnitude < Underground.RangeFov.Close_Activation then
+						Underground.SilentFov.Radius = WeaponSettingsV2.Close
+					elseif Magnitude < Underground.RangeFov.Medium_Activation then
+						Underground.SilentFov.Radius = WeaponSettingsV2.Med
+					elseif Magnitude < Underground.RangeFov.Far_Activation then
+						Underground.SilentFov.Radius = WeaponSettingsV2.Far
+					end
+				end
+			end
+		end
+	end
+end)
+
+-- // Updates Esp Posistions
+Script.Functions.UpdateEsp = LPH_NO_VIRTUALIZE(function()
+    for i,v in pairs(Script.EspPlayers) do
+        if Underground.Esp.Enabled and i ~= Client and i.Character and i.Character:FindFirstChild("Humanoid") and i.Character:FindFirstChild("HumanoidRootPart") and i.Character:FindFirstChild("Head") then
+            local Hum = i.Character.Humanoid
+            local Hrp = i.Character.HumanoidRootPart
+            
+            local Vector, OnScreen = Camera:WorldToViewportPoint(i.Character.HumanoidRootPart.Position)
+            local Size = (Camera:WorldToViewportPoint(Hrp.Position - Vector3.new(0, 3, 0)).Y - Camera:WorldToViewportPoint(Hrp.Position + Vector3.new(0, 2.6, 0)).Y) / 2
+            local BoxSize = Vector2.new(math.floor(Size * 1.5), math.floor(Size * 1.9))
+            local BoxPos = Vector2.new(math.floor(Vector.X - Size * 1.5 / 2), math.floor(Vector.Y - Size * 1.6 / 2))
+            local BottomOffset = BoxSize.Y + BoxPos.Y + 1
+
+            if OnScreen then
+                if Underground.Esp.Name.Enabled then
+                    v.Name.Position = Vector2.new(BoxSize.X / 2 + BoxPos.X, BoxPos.Y - 16)
+                    v.Name.Outline = Underground.Esp.Name.OutLine
+                    v.Name.Text = tostring(i)
+                    v.Name.Color = Underground.Esp.Name.Color
+                    v.Name.OutlineColor = Color3.fromRGB(0, 0, 0)
+                    v.Name.Font = 0
+                    v.Name.Size = 16
+
+                    v.Name.Visible = true
+                else
+                    v.Name.Visible = false
+                end
+                if Underground.Esp.Distance.Enabled and Client.Character and Client.Character:FindFirstChild("HumanoidRootPart") then
+                    v.Distance.Position = Vector2.new(BoxSize.X / 2 + BoxPos.X, BottomOffset)
+                    v.Distance.Outline = Underground.Esp.Distance.OutLine
+                    v.Distance.Text = "[" .. math.floor((Hrp.Position - Client.Character.HumanoidRootPart.Position).Magnitude) .. "m]"
+                    v.Distance.Color = Underground.Esp.Distance.Color
+                    v.Distance.OutlineColor = Color3.fromRGB(0, 0, 0)
+                    BottomOffset = BottomOffset + 15
+
+                    v.Distance.Font = 0
+                    v.Distance.Size = 16
+
+                    v.Distance.Visible = true
+                else
+                    v.Distance.Visible = false
+                end
+                if Underground.Esp.Box.Enabled then
+                    v.BoxOutline.Size = BoxSize
+                    v.BoxOutline.Position = BoxPos
+                    v.BoxOutline.Visible = Underground.Esp.Box.OutLine
+                    v.BoxOutline.Color = Color3.fromRGB(0, 0, 0)
+    
+                    v.Box.Size = BoxSize
+                    v.Box.Position = BoxPos
+                    v.Box.Color = Underground.Esp.Box.Color
+                    v.Box.Visible = true
+                else
+                    v.BoxOutline.Visible = false
+                    v.Box.Visible = false
+                end
+                if Underground.Esp.HealthBar.Enabled then
+                    v.HealthBar.From = Vector2.new((BoxPos.X - 5), BoxPos.Y + BoxSize.Y)
+                    v.HealthBar.To = Vector2.new(v.HealthBar.From.X, v.HealthBar.From.Y - (Hum.Health / Hum.MaxHealth) * BoxSize.Y)
+                    v.HealthBar.Color = Underground.Esp.HealthBar.Color
+                    v.HealthBar.Visible = true
+
+                    v.HealthBarOutline.From = Vector2.new(v.HealthBar.From.X, BoxPos.Y + BoxSize.Y + 1)
+                    v.HealthBarOutline.To = Vector2.new(v.HealthBar.From.X, (v.HealthBar.From.Y - 1 * BoxSize.Y) -1)
+                    v.HealthBarOutline.Color = Color3.fromRGB(0, 0, 0)
+                    v.HealthBarOutline.Visible = Underground.Esp.HealthBar.OutLine
+                else
+                    v.HealthBarOutline.Visible = false
+                    v.healthBar.Visible = false
+                end
+                if Underground.Esp.HealthText.Enabled then
+                    v.HealthText.Text = tostring(math.floor((Hum.Health / Hum.MaxHealth) * 100 + 0.5))
+                    v.HealthText.Position = Vector2.new((BoxPos.X - 20), (BoxPos.Y + BoxSize.Y - 1 * BoxSize.Y) -1)
+                    v.HealthText.Color = Underground.Esp.HealthText.Color
+                    v.HealthText.OutlineColor = Color3.fromRGB(0, 0, 0)
+                    v.HealthText.Outline = Underground.Esp.HealthText.OutLine
+
+                    v.HealthText.Font = 0
+                    v.HealthText.Size = 16
+
+                    v.HealthText.Visible = true
+                else
+                    v.HealthText.Visible = false
+                end
+            else
+                v.Name.Visible = false
+                v.BoxOutline.Visible = false
+                v.Box.Visible = false
+                v.HealthBarOutline.Visible = false
+                v.HealthBar.Visible = false
+                v.HealthText.Visible = false
+                v.Distance.Visible = false
+            end
+        else
+            v.Name.Visible = false
+            v.BoxOutline.Visible = false
+            v.Box.Visible = false
+            v.HealthBarOutline.Visible = false
+            v.HealthBar.Visible = false
+            v.HealthText.Visible = false
+            v.Distance.Visible = false
+        end
+    end
+end)
+
+-- // Client Fps (EXECUTES PER FRAME)
+RS.Heartbeat:Connect(LPH_NO_VIRTUALIZE(function()
+    Script.Functions.GetClosestPlayer()
+    Script.Functions.SilentMisc()
+    Script.Functions.MouseChanger()
+end))
+
+-- // Server Tick (EXECUTES PER TICK)
+RS.RenderStepped:Connect(LPH_NO_VIRTUALIZE(function()
+    Script.Functions.UpdateEsp()
+    Script.Functions.UpdateFOV()
+    if Underground.Silent.Enabled and Underground.Silent.ClosestPoint and Script.Functions.Alive(SilentTarget) and Players[tostring(SilentTarget)].Character:FindFirstChild(Underground.Silent.Part) then
+        local ClosestPoint = Script.Functions.GetClosestPointOfPart(Players[tostring(SilentTarget)].Character[Underground.Silent.Part])
+        ClosestPointCF = CFrame.new(ClosestPoint.X, ClosestPoint.Y, ClosestPoint.Z)
+    end
+    if Underground.AimAssist.Enabled and Script.Functions.Alive(AimTarget) and Underground.Silent.ClosestPart and Script.Functions.Alive(SilentTarget) then
+        local currentpart = tostring(Script.Functions.GetClosestBodyPart(AimTarget.Character))
+        if Underground.AimAssist.ClosestPart then
+			Underground.AimAssist.Part = currentpart
+		end
+        if Underground.Silent.ClosestPart then
+            Underground.Silent.Part = currentpart
+            OldSilentAimPart = Underground.Silent.Part
+        end
+        return
+    end
+    if Underground.AimAssist.Enabled and Underground.AimAssist.ClosestPart and Script.Functions.Alive(AimTarget) then
+        Underground.AimAssist.Part = tostring(Script.Functions.GetClosestBodyPart(AimTarget.Character))
+    end
+    if Underground.Silent.Enabled and Underground.Silent.ClosestPart and Script.Functions.Alive(SilentTarget) then
+        Underground.Silent.Part = tostring(Script.Functions.GetClosestBodyPart(SilentTarget.Character))
+        OldSilentAimPart = Underground.Silent.Part
+    end
+end))
+
+if getgenv().Underground.Macro.Enabled == true then
+    local Player = game:GetService("Players").LocalPlayer
+    local Mouse = Player:GetMouse()
+    local Enabled = false
+    local IsHolding = false
+    
+    local function runMacro()
+        while Enabled do
+            game:GetService("RunService").Heartbeat:wait(0.125)
+            game:GetService("VirtualInputManager"):SendMouseWheelEvent("0.1", "0.1", true, game)
+            game:GetService("RunService").Heartbeat:wait(0.125)
+            game:GetService("VirtualInputManager"):SendMouseWheelEvent("0.1", "0.1", false, game)
+            game:GetService("RunService").Heartbeat:wait(0.125)
+            
+            -- For hold mode, break if not holding anymore
+            if getgenv().Underground.Macro.HoldMode and not IsHolding then
+                break
+            end
+        end
+    end
+    
+    Mouse.KeyDown:Connect(function(Key)
+        if Key == getgenv().Underground.Macro.MacroKey then
+            if getgenv().Underground.Macro.HoldMode then
+                -- Hold mode logic
+                if not IsHolding then
+                    IsHolding = true
+                    Enabled = true
+                    coroutine.wrap(runMacro)()
+                end
+            else
+                -- Toggle mode logic
+                Enabled = not Enabled
+                if Enabled then
+                    coroutine.wrap(runMacro)()
+                end
+            end
+        end
+    end)
+    
+    Mouse.KeyUp:Connect(function(Key)
+        if Key == getgenv().Underground.Macro.MacroKey and getgenv().Underground.Macro.HoldMode then
+            IsHolding = false
+            Enabled = false
+        end
+    end)
+end
+
+    local uis = game:GetService("UserInputService")
+    local Players = game:GetService("Players")
+    local LocalPlayer = Players.LocalPlayer
+    local RunService = game:GetService("RunService")
+    local isSpeedEnabled = false
+    local defaultSpeed = 16
+    
+    
+    local function updateSpeed()
+        if LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("Humanoid") then
+            if isSpeedEnabled and getgenv().Underground.WalkSpeed.Enabled then
+                LocalPlayer.Character.Humanoid.WalkSpeed = getgenv().Underground.WalkSpeed.Speed
+            end
+        end
+    end
+
+    
+    local speedConnection = RunService.RenderStepped:Connect(updateSpeed)
+
+   
+    LocalPlayer.CharacterAdded:Connect(function(character)
+        character:WaitForChild("Humanoid")
+        updateSpeed()
+    end)
+
+    
+    uis.InputBegan:Connect(function(input, gameProcessed)
+        if gameProcessed then return end
+
+        if input.KeyCode == Enum.KeyCode[getgenv().Underground.WalkSpeed.WalkSpeedKey] then
+            isSpeedEnabled = not isSpeedEnabled
+            if isSpeedEnabled then
+                LocalPlayer.Character.Humanoid.WalkSpeed = getgenv().Underground.WalkSpeed.Speed
+            else
+                LocalPlayer.Character.Humanoid.WalkSpeed = defaultSpeed
+            end
+        end
+    end)
+
+-- // Checks Everyone In The Server And Puts It In A Table
+for _, Player in ipairs(Players:GetPlayers()) do
+    if (Player ~= Client and Client:IsFriendsWith(Player.UserId)) then
+        table.insert(Script.Friends, Player)
+    end
+    Script.Functions.NewPlayer(Player)
+end
+
+-- // Checks When Players Joins And Adds Them To A Table
+Players.PlayerAdded:Connect(function(Player)
+    if (Client:IsFriendsWith(Player.UserId)) then
+        table.insert(Script.Friends, Player)
+    end
+    Script.Functions.NewPlayer(Player)
+end)
+
+-- // Checks If A Player Left And Removes Them From The Table
+Players.PlayerRemoving:Connect(function(Player)
+    local i = table.find(Script.Friends, Player)
+    if (i) then
+        table.remove(Script.Friends, i)
+    end
+    for i,v in pairs(Script.EspPlayers[Player]) do
+        v:Remove()
+    end
+    Script.EspPlayers[Player] = nil
+end)
+end)()
+
+for _, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+    if v:IsA("Script") and v.Name ~= "Health" and v.Name ~= "Sound" and v:FindFirstChild("LocalScript") then
+        v:Destroy()
+    end
+end
+game.Players.LocalPlayer.CharacterAdded:Connect(function(char)
+    repeat
+        wait()
+    until game.Players.LocalPlayer.Character
+    char.ChildAdded:Connect(function(child)
+        if child:IsA("Script") then 
+            wait(0.1)
+            if child:FindFirstChild("LocalScript") then
+                child.LocalScript:FireServer()
+            end
+        end
+    end)
+end)
+-- bypass
+for _, con in next, getconnections(workspace.CurrentCamera.Changed) do
+    task.wait()
+    con:Disable()
+end
+for _, con in next, getconnections(workspace.CurrentCamera:GetPropertyChangedSignal("CFrame")) do
+    task.wait()
+    con:Disable()
+end
+
+for _, key in next, getgc(true) do 
+    local function changeKey(instanceType)
+        if pcall(function() return rawget(key, instanceType) end) and typeof(rawget(key, instanceType)) == 'table' and (rawget(key, instanceType))[1] == 'kick' then
+            key.tvk = {
+                'kick',
+                function() 
+                    return game.Workspace:WaitForChild('')
+                end
+            }
+        end
+    end
+    changeKey('indexInstance')
+    changeKey('namecallInstance')
+end
