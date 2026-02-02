@@ -575,7 +575,8 @@ Script.Functions.GetClosestBodyPart = LPH_NO_VIRTUALIZE(function(Char)
 
         -- Calculate distance from mouse to the part's screen position
         local ScreenPosition = Vector2.new(Position.X, Position.Y)
-        local Magnitude = (UserInputService:GetMouseLocation() - ScreenPosition).Magnitude
+		local UIS = game:GetService("UserInputService")
+        local Magnitude = (UIS:GetMouseLocation() - ScreenPosition).Magnitude
 
         -- Update closest part if this one is nearer to the cursor
         if Magnitude < Distance then
@@ -595,8 +596,8 @@ Script.Functions.GetClosestPointOfPart = LPH_NO_VIRTUALIZE(function(Part, Scale)
         -- Scale determines the boundary (e.g., 1.0 is full size, 0.5 is half size)
         local Scale = Scale or 1 
         local PartSizeTransformed = PartSize * (Scale / 2)
-
-        local MousePosition = UserInputService:GetMouseLocation()
+		local UIS = game:GetService("UserInputService")
+        local MousePosition = UIS:GetMouseLocation()
         local CurrentCamera = Workspace.CurrentCamera
 
         -- Calculate where the mouse is pointing in 3D space relative to the part
