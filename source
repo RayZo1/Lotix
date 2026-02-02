@@ -809,63 +809,76 @@ if getgenv().DEBUG then
     print("[auth.injected.live] Started Emulation Thread")
 end
 
--- // Gets The Closest Player For Cursor (Silent Aim)
+-- // Updated Closest Player Logic (Merged with Script 2 Conditions)
 Script.Functions.GetClosestPlayer = LPH_NO_VIRTUALIZE(function()
     local Target = nil
-    local Closest = math.huge
+    local ClosestDistance = math.huge
+    local MousePosition = UserInputService:GetMouseLocation()
+    local CurrentCamera = workspace.CurrentCamera
+    
+    -- HitChance Check (From Script 1)
     local HitChance = Script.Functions.CalculateChance(Underground.Silent.HitChance)
-
     if not HitChance then
+        SilentTarget = nil
         return nil
     end
+
     for _, v in pairs(Players:GetPlayers()) do
         if v.Character and v ~= Client and v.Character:FindFirstChild("HumanoidRootPart") then
-            if not Script.Functions.OnScreen(v.Character.HumanoidRootPart) then 
-                continue 
+            local Character = v.Character
+            local Root = Character.HumanoidRootPart
+            
+            -- 1. Screen Check
+            local Position, OnScreen = CurrentCamera:WorldToViewportPoint(Root.Position)
+            if not OnScreen then continue end
+
+            -- 2. Condition Checks (Merged from your provided snippet)
+            -- Knocked / Grabbed Check
+            if (Underground.Silent.CheckIf_KO or shared.Saved['C​o​n​d​i​t​i​o​n​s']['P​l​a​y​e​r​ ​K​n​o​c​k​e​d']) then
+                local KoCheck = CurrentGame.Functions.IsKnocked(Character)
+                local Grabbed = CurrentGame.Functions.IsGrabbed(v)
+                if KoCheck or Grabbed then continue end
             end
-            if Underground.Silent.WallCheck and not Script.Functions.RayCastCheck(v.Character.HumanoidRootPart, v.Character) then 
-                continue 
+
+            -- Health Check
+            if Underground.Silent.CheckIf_TargetDeath and Character:FindFirstChild("Humanoid") then
+                if Character.Humanoid.Health < 4 then continue end
             end
-            if Underground.Silent.CheckIf_KO and v.Character:FindFirstChild("BodyEffects") then
-                local KoCheck = v.Character.BodyEffects:FindFirstChild("K.O").Value
-                local Grabbed = v.Character:FindFirstChild("GRABBING_CONSTRAINT") ~= nil
-                if KoCheck or Grabbed then
-                    continue
-                end
+
+            -- Wall Check / Visible Check
+            if (Underground.Silent.WallCheck or shared.Saved['C​o​n​d​i​t​i​o​n​s']['P​l​a​y​e​r​ ​V​i​s​i​b​l​e']) then
+                if not Script.Functions.RayCastCheck(Root, Character) then continue end
             end
-            if Underground.Silent.CheckIf_TargetDeath and v.Character:FindFirstChild("Humanoid") then
-                if v.Character.Humanoid.health < 4 then
-                    continue
-                end
+
+            -- Social/Team Checks (Script 1)
+            if Underground.Both.CrewCheck and v:FindFirstChild("DataFolder") then
+                local MyCrew = Client.DataFolder.Information:FindFirstChild("Crew").Value
+                local TheirCrew = v.DataFolder.Information:FindFirstChild("Crew").Value
+                if MyCrew ~= "" and MyCrew == TheirCrew then continue end
             end
-            if Underground.Both.VisibleCheck and v.Character:FindFirstChild("Head") then
-                if v.Character.Head.Transparency > 0.5 then
-                    continue
-                end
-            end
-            if Underground.Both.CrewCheck and Script.Functions.FindCrew(v) and v.DataFolder.Information:FindFirstChild("Crew").Value == Client.DataFolder.Information:FindFirstChild("Crew").Value then
+
+            if Underground.Both.TeamCheck and v.Team == Client.Team then
                 continue
             end
-            if Underground.Both.TeamCheck then
-                if v.Team ~= Client.Team then
-                    continue
-                end
-            end
-            if Underground.Both.FriendCheck then
-                if not table.find(Script.Friends, v.UserId) then
-                    continue
-                end
-            end
-            local Distance = Script.Functions.GetMagnitudeFromMouse(v.Character.HumanoidRootPart)
 
-            if (Distance < Closest and Script.Drawing.SilentCircle.Radius + 10 > Distance) then
-                Closest = Distance
+            if Underground.Both.FriendCheck and not table.find(Script.Friends, v.UserId) then
+                continue
+            end
+
+            -- 3. Distance & FOV Calculation
+            local ScreenPos = Vector2.new(Position.X, Position.Y)
+            local Distance = (ScreenPos - MousePosition).Magnitude
+
+            -- Respect the Silent Aim Circle Radius
+            if Distance < ClosestDistance and Distance < Script.Drawing.SilentCircle.Radius then
+                ClosestDistance = Distance
                 Target = v
             end
         end
     end
 
     SilentTarget = Target
+    return Target
 end)
 
 -- // Gets Closest Player From Mouse (AimAssist)
