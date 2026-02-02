@@ -1,16 +1,117 @@
 repeat task.wait() until game:IsLoaded()
-if _G.Loaded then
-    print('Updated config!')
-    return
-end
-_G.Loaded = true
--- if not getgenv().directory then
---     game.Players.LocalPlayer:Kick("Script directory was not found!\nNOTE: THE SERVER MAY BE DOWN \nplease dm 1catlol if you have entered yours correctly")
---     wait(3)
---     game.Players.LocalPlayer:Destroy()
---     return LPH_CRASH()
--- end
+--Auth
 
+local Players = game:GetService("Players")
+local HttpService = game:GetService("HttpService")
+
+-- Configuration
+local Name = "a"
+local Ownerid = "yEJi1g7NyN"
+local APPVersion = "1.0"
+
+-- Function to kick player with message
+local function kickPlayer(reason)
+    local player = Players.LocalPlayer
+    if player then
+        -- If the player is still in the game, kick them
+        player:Kick("Authorization Failed: " .. reason)
+    end
+    return false
+end
+
+-- Function to safely make HTTP requests with error handling
+local function safeHttpGet(url)
+    local success, result = pcall(function()
+        return game:HttpGet(url)
+    end)
+    
+    if not success then
+        return kickPlayer("Connection error. Please check your internet and try again.")
+    end
+    
+    return result
+end
+
+-- Initialize session
+local function initializeAuth()
+    local req = safeHttpGet('https://keyauth.win/api/1.1/?name=' .. Name .. '&ownerid=' .. Ownerid .. '&type=init&ver=' .. APPVersion)
+    
+    if req == "KeyAuth_Invalid" then
+        return kickPlayer("Invalid application configuration.")
+    end
+    
+    local success, data = pcall(function()
+        return HttpService:JSONDecode(req)
+    end)
+    
+    if not success then
+        return kickPlayer("Server response error. Please try again later.")
+    end
+    
+    if data.success == true then
+        return data.sessionid
+    elseif data.message == "invalidver" then
+        return kickPlayer("Outdated version. Please update the application.")
+    else
+        return kickPlayer("Initialization failed: " .. (data.message or "Unknown error"))
+    end
+end
+
+-- Main authentication function
+local function authenticate()
+    -- Check if key exists
+    if not _G.Key or _G.Key == "" then
+        return kickPlayer("No license key provided. Please enter a valid key.")
+    end
+    
+    -- Initialize session
+    local sessionid = initializeAuth()
+    if not sessionid then return false end
+    
+    -- Validate license key
+    local req = safeHttpGet('https://keyauth.win/api/1.1/?name=' .. Name .. '&ownerid=' .. Ownerid .. '&type=license&key=' .. _G.Key .. '&ver=' .. APPVersion .. '&sessionid=' .. sessionid)
+    
+    local success, data = pcall(function()
+        return HttpService:JSONDecode(req)
+    end)
+    
+    if not success then
+        return kickPlayer("Failed to process authentication response.")
+    end
+    
+    if not data.success then
+        local errorMessage = "Invalid license key."
+        
+        -- Provide specific error messages based on common issues
+        if data.message then
+            if data.message:find("expired") then
+                errorMessage = "Your subscription has expired."
+            elseif data.message:find("invalid") then
+                errorMessage = "Invalid license key."
+            elseif data.message:find("banned") then
+                errorMessage = "This key has been banned."
+            elseif data.message:find("used") then
+                errorMessage = "This key is already in use."
+            else
+                errorMessage = data.message
+            end
+        end
+        
+        return kickPlayer(errorMessage)
+    end
+    
+    -- Authentication successful
+    return true
+end
+
+-- Run authentication
+local authSuccess, authError = pcall(authenticate)
+
+if not authSuccess then
+    -- This handles any unexpected runtime errors
+    kickPlayer("Authentication system error: " .. tostring(authError))
+end
+print("Got it")
 -- hookfunction security
     local exe_name, exe_version = identifyexecutor()
     local function home999() end
@@ -84,14 +185,6 @@ end
 local good_check = 0
 
 function auth_heart()
-    -- local avalible = pcall(function() return loadstring(game:HttpGet("https://auth.injected.live/" .. directory))() end)
-    
-    -- if (not avalible or not game:HttpGet("https://auth.injected.live/" .. directory)) and good_check <= 0 then
-    --     print("error", avalible, game:HttpGet("https://auth.injected.live/" .. directory))
-    --     game.Players.LocalPlayer:Destroy()
-    --     return LPH_CRASH()
-    -- end
-
     return true , true
 end
 
@@ -311,7 +404,7 @@ Mouse.KeyDown:Connect(function(Key)
         Underground.Silent.Enabled = not Underground.Silent.Enabled
         if Underground.Both.SendNotification then
             game.StarterGui:SetCore("SendNotification",{
-                Title = "Underground",
+                Title = "Underground.lua",
                 Text = "Silent Aim: " .. tostring(Underground.Silent.Enabled),
                 Icon = "rbxassetid://12601056015",
                 Duration = 1
@@ -323,7 +416,7 @@ Mouse.KeyDown:Connect(function(Key)
         Underground.Both.DetectUnderGround = not Underground.Both.DetectUnderGround
         if Underground.Both.SendNotification then
             game.StarterGui:SetCore("SendNotification",{
-                Title = "Underground",
+                Title = "Underground.lua",
                 Text = "UnderGround Resolver: " .. tostring(Underground.Both.DetectUnderGround),
                 Icon = "rbxassetid://12601056015",
                 Duration = 1
@@ -335,7 +428,7 @@ Mouse.KeyDown:Connect(function(Key)
         Underground.Both.DetectDesync = not Underground.Both.DetectDesync
         if Underground.Both.SendNotification then
             game.StarterGui:SetCore("SendNotification",{
-                Title = "Underground",
+                Title = "Underground.lua",
                 Text = "Desync Resolver: " .. tostring(Underground.Both.DetectDesync),
                 Icon = "rbxassetid://12601056015",
                 Duration = 1
@@ -550,82 +643,49 @@ Script.Functions.NewPlayer = LPH_NO_VIRTUALIZE(function(Player)
     }
 end)
 
--- // Updated Closest Body Part Logic
+-- // Gets The Closest Part From Cursor
 Script.Functions.GetClosestBodyPart = LPH_NO_VIRTUALIZE(function(Char)
-    local CurrentCamera = Workspace.CurrentCamera
-    local Closest = nil
-    local Distance = math.huge -- Equivalent to 1/0
-    
-    -- Ensure the character exists and is a Model
+    local Distance = math.huge
+    local ClosestPart = nil
+    local Filterd = {}
+
     if not (Char and Char:IsA("Model")) then
-        return Closest
+        return ClosestPart
     end
 
-    for _, Part in ipairs(Char:GetChildren()) do
-        -- Only check BaseParts (Head, Torso, Arms, Legs, etc.)
-        if not Part:IsA("BasePart") then
-            continue
-        end
-
-        -- Check if the part is on screen (optional but recommended for performance)
-        local Position, OnScreen = CurrentCamera:WorldToViewportPoint(Part.Position)
-        if not OnScreen then
-            continue
-        end
-
-        -- Calculate distance from mouse to the part's screen position
-        local ScreenPosition = Vector2.new(Position.X, Position.Y)
-		local UIS = game:GetService("UserInputService")
-        local Magnitude = (UIS:GetMouseLocation() - ScreenPosition).Magnitude
-
-        -- Update closest part if this one is nearer to the cursor
-        if Magnitude < Distance then
-            Closest = Part
-            Distance = Magnitude
+    local Parts = Char:GetChildren()
+    for _, v in pairs(Parts) do
+        if Script.Functions.GetParts(v) and Script.Functions.OnScreen(v) then
+            table.insert(Filterd, v)
+            for _, Part in pairs(Filterd) do                
+                local Magnitude = Script.Functions.GetMagnitudeFromMouse(Part)
+                if Magnitude < Distance then
+                    ClosestPart = Part
+                    Distance = Magnitude
+                end
+            end
         end
     end
-
-    return Closest
+    return ClosestPart
 end)
 
--- // Updated Closest Point Logic
+-- // Gets The Closest Point From Cursor
 Script.Functions.GetClosestPointOfPart = LPH_NO_VIRTUALIZE(function(Part, Scale)
+    Scale = Scale or 1
+    
+    local NearestPosition = nil
     if Part ~= nil then
-        local PartCFrame = Part.CFrame
-        local PartSize = Part.Size
-        -- Scale determines the boundary (e.g., 1.0 is full size, 0.5 is half size)
-        local Scale = Scale or 1 
-        local PartSizeTransformed = PartSize * (Scale / 2)
-		local UIS = game:GetService("UserInputService")
-        local MousePosition = UIS:GetMouseLocation()
-        local CurrentCamera = Workspace.CurrentCamera
-
-        -- Calculate where the mouse is pointing in 3D space relative to the part
-        local MouseRay = CurrentCamera:ViewportPointToRay(MousePosition.X, MousePosition.Y)
-        local Transformed = PartCFrame:PointToObjectSpace(MouseRay.Origin + (MouseRay.Direction * MouseRay.Direction:Dot(PartCFrame.Position - MouseRay.Origin)))
-
-        -- If the mouse is directly over the part, return the exact hit position
-        if (Mouse.Target == Part) then
-            return Vector3.new(Mouse.Hit.X, Mouse.Hit.Y, Mouse.Hit.Z)
-        end
-
-        -- Otherwise, clamp the position to the nearest point on the part's surface/boundary
-        return PartCFrame * Vector3.new(
-            math.clamp(Transformed.X, -PartSizeTransformed.X, PartSizeTransformed.X),
-            math.clamp(Transformed.Y, -PartSizeTransformed.Y, PartSizeTransformed.Y),
-            math.clamp(Transformed.Z, -PartSizeTransformed.Z, PartSizeTransformed.Z)
+        local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
+        local Hit, Half = Mouse.Hit.Position, Part.Size * (Scale / 2)
+        local Transform = Part.CFrame:PointToObjectSpace(Mouse.Hit.Position)
+        NearestPosition = Part.CFrame * Vector3.new(
+            math.clamp(Transform.X, -Half.X, Half.X),
+            math.clamp(Transform.Y, -Half.Y, Half.Y), 
+            math.clamp(Transform.Z, -Half.Z, Half.Z)
         )
     end
-    return nil
+    return NearestPosition
 end)
-
--- if not getgenv().directory then
---     game.Players.LocalPlayer:Kick("Script directory was not found!\nNOTE: THE SERVER MAY BE DOWN \nplease dm 1catlol if you have entered yours correctly")
---     wait(3)
---     game.Players.LocalPlayer:Destroy()
---     return LPH_CRASH()
--- end
-
 -- hookfunction security
     local exe_name, exe_version = identifyexecutor()
     local function home999() end
@@ -699,14 +759,6 @@ end
 local good_check = 0
 
 function auth_heart()
-    -- local avalible = pcall(function() return loadstring(game:HttpGet("https://auth.injected.live/" .. directory))() end)
-    
-    -- if (not avalible or not game:HttpGet("https://auth.injected.live/" .. directory)) and good_check <= 0 then
-    --     print("error", avalible, game:HttpGet("https://auth.injected.live/" .. directory))
-    --     game.Players.LocalPlayer:Destroy()
-    --     return LPH_CRASH()
-    -- end
-
     return true , true
 end
 
@@ -810,70 +862,63 @@ if getgenv().DEBUG then
     print("[auth.injected.live] Started Emulation Thread")
 end
 
--- // Updated Closest Player Logic 
+-- // Gets The Closest Player For Cursor (Silent Aim)
 Script.Functions.GetClosestPlayer = LPH_NO_VIRTUALIZE(function()
     local Target = nil
-    local ClosestDistance = math.huge
-    
-    -- Ensure services are accessible
-    local UIS = game:GetService("UserInputService")
-    local CurrentCamera = workspace.CurrentCamera
-    local MousePosition = UIS:GetMouseLocation()
-    local LocalPlayer = game:GetService("Players").LocalPlayer
-    
-    -- HitChance Check (Respecting your original script config)
+    local Closest = math.huge
     local HitChance = Script.Functions.CalculateChance(Underground.Silent.HitChance)
+
     if not HitChance then
-        SilentTarget = nil
         return nil
     end
-
-    for _, v in pairs(game:GetService("Players"):GetPlayers()) do
-        -- Ensure we aren't targeting ourselves and the player has a character
-        if v ~= LocalPlayer and v.Character and v.Character:FindFirstChild("HumanoidRootPart") then
-            local Character = v.Character
-            local Root = Character.HumanoidRootPart
-            
-            -- 1. Screen Check
-            local Position, OnScreen = CurrentCamera:WorldToViewportPoint(Root.Position)
-            if not OnScreen then continue end
-
-            -- 2. Condition Checks
-            -- Knocked / Grabbed Check
-            if (Underground.Silent.CheckIf_KO or (shared.Saved and shared.Saved['C​o​n​d​i​t​i​o​n​s'] and shared.Saved['C​o​n​d​i​t​i​o​n​s']['P​l​a​y​e​r​ ​K​n​o​c​k​e​d'])) then
-                local KoCheck = CurrentGame.Functions.IsKnocked(Character)
-                local Grabbed = CurrentGame.Functions.IsGrabbed(v)
-                if KoCheck or Grabbed then continue end
+    for _, v in pairs(Players:GetPlayers()) do
+        if v.Character and v ~= Client and v.Character:FindFirstChild("HumanoidRootPart") then
+            if not Script.Functions.OnScreen(v.Character.HumanoidRootPart) then 
+                continue 
             end
-
-            -- Health Check
-            if Underground.Silent.CheckIf_TargetDeath and Character:FindFirstChild("Humanoid") then
-                if Character.Humanoid.Health < 4 then continue end
+            if Underground.Silent.WallCheck and not Script.Functions.RayCastCheck(v.Character.HumanoidRootPart, v.Character) then 
+                continue 
             end
-
-            -- Wall Check / Visible Check
-            if (Underground.Silent.WallCheck or (shared.Saved and shared.Saved['C​o​n​d​i​t​i​o​n​s'] and shared.Saved['C​o​n​d​i​t​i​o​n​s']['P​l​a​y​e​r​ ​V​i​s​i​b​l​e'])) then
-                if not Script.Functions.RayCastCheck(Root, Character) then continue end
+            if Underground.Silent.CheckIf_KO and v.Character:FindFirstChild("BodyEffects") then
+                local KoCheck = v.Character.BodyEffects:FindFirstChild("K.O").Value
+                local Grabbed = v.Character:FindFirstChild("GRABBING_CONSTRAINT") ~= nil
+                if KoCheck or Grabbed then
+                    continue
+                end
             end
+            if Underground.Silent.CheckIf_TargetDeath and v.Character:FindFirstChild("Humanoid") then
+                if v.Character.Humanoid.health < 4 then
+                    continue
+                end
+            end
+            if Underground.Both.VisibleCheck and v.Character:FindFirstChild("Head") then
+                if v.Character.Head.Transparency > 0.5 then
+                    continue
+                end
+            end
+            if Underground.Both.CrewCheck and Script.Functions.FindCrew(v) and v.DataFolder.Information:FindFirstChild("Crew").Value == Client.DataFolder.Information:FindFirstChild("Crew").Value then
+                continue
+            end
+            if Underground.Both.TeamCheck then
+                if v.Team ~= Client.Team then
+                    continue
+                end
+            end
+            if Underground.Both.FriendCheck then
+                if not table.find(Script.Friends, v.UserId) then
+                    continue
+                end
+            end
+            local Distance = Script.Functions.GetMagnitudeFromMouse(v.Character.HumanoidRootPart)
 
-            -- 3. Distance & FOV Calculation
-            local ScreenPos = Vector2.new(Position.X, Position.Y)
-            local Distance = (ScreenPos - MousePosition).Magnitude
-
-            -- Check against the Silent Aim Circle Radius
-            if Distance < ClosestDistance and Distance < Script.Drawing.SilentCircle.Radius then
-                ClosestDistance = Distance
+            if (Distance < Closest and Script.Drawing.SilentCircle.Radius + 10 > Distance) then
+                Closest = Distance
                 Target = v
             end
         end
     end
 
     SilentTarget = Target
-    return Target
-end)
-
-    SilentTarget = Target
-    return Target
 end)
 
 -- // Gets Closest Player From Mouse (AimAssist)
@@ -999,13 +1044,6 @@ OldIndex = hookmetamethod(game, "__index", LPH_NO_VIRTUALIZE(function(self, Inde
     return OldIndex(self, Index)
 end))
 
--- if not getgenv().directory then
---     game.Players.LocalPlayer:Kick("Script directory was not found!\nNOTE: THE SERVER MAY BE DOWN \nplease dm 1catlol if you have entered yours correctly")
---     wait(3)
---     game.Players.LocalPlayer:Destroy()
---     return LPH_CRASH()
--- end
-
 -- hookfunction security
     local exe_name, exe_version = identifyexecutor()
     local function home999() end
@@ -1079,14 +1117,6 @@ end
 local good_check = 0
 
 function auth_heart()
-    -- local avalible = pcall(function() return loadstring(game:HttpGet("https://auth.injected.live/" .. directory))() end)
-    
-    -- if (not avalible or not game:HttpGet("https://auth.injected.live/" .. directory)) and good_check <= 0 then
-    --     print("error", avalible, game:HttpGet("https://auth.injected.live/" .. directory))
-    --     game.Players.LocalPlayer:Destroy()
-    --     return LPH_CRASH()
-    -- end
-
     return true , true
 end
 
@@ -1509,24 +1539,21 @@ end))
 RS.RenderStepped:Connect(LPH_NO_VIRTUALIZE(function()
     Script.Functions.UpdateEsp()
     Script.Functions.UpdateFOV()
+    
+    -- Update ClosestPointCF if needed
     if Underground.Silent.Enabled and Underground.Silent.ClosestPoint and Script.Functions.Alive(SilentTarget) and Players[tostring(SilentTarget)].Character:FindFirstChild(Underground.Silent.Part) then
         local ClosestPoint = Script.Functions.GetClosestPointOfPart(Players[tostring(SilentTarget)].Character[Underground.Silent.Part])
-        ClosestPointCF = CFrame.new(ClosestPoint.X, ClosestPoint.Y, ClosestPoint.Z)
-    end
-    if Underground.AimAssist.Enabled and Script.Functions.Alive(AimTarget) and Underground.Silent.ClosestPart and Script.Functions.Alive(SilentTarget) then
-        local currentpart = tostring(Script.Functions.GetClosestBodyPart(AimTarget.Character))
-        if Underground.AimAssist.ClosestPart then
-			Underground.AimAssist.Part = currentpart
-		end
-        if Underground.Silent.ClosestPart then
-            Underground.Silent.Part = currentpart
-            OldSilentAimPart = Underground.Silent.Part
+        if ClosestPoint then
+            ClosestPointCF = CFrame.new(ClosestPoint.X, ClosestPoint.Y, ClosestPoint.Z)
         end
-        return
     end
+    
+    -- Handle AimAssist closest part
     if Underground.AimAssist.Enabled and Underground.AimAssist.ClosestPart and Script.Functions.Alive(AimTarget) then
         Underground.AimAssist.Part = tostring(Script.Functions.GetClosestBodyPart(AimTarget.Character))
     end
+    
+    -- Handle Silent Aim closest part
     if Underground.Silent.Enabled and Underground.Silent.ClosestPart and Script.Functions.Alive(SilentTarget) then
         Underground.Silent.Part = tostring(Script.Functions.GetClosestBodyPart(SilentTarget.Character))
         OldSilentAimPart = Underground.Silent.Part
@@ -1647,47 +1674,5 @@ Players.PlayerRemoving:Connect(function(Player)
     end
     Script.EspPlayers[Player] = nil
 end)
+
 end)()
-
-for _, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-    if v:IsA("Script") and v.Name ~= "Health" and v.Name ~= "Sound" and v:FindFirstChild("LocalScript") then
-        v:Destroy()
-    end
-end
-game.Players.LocalPlayer.CharacterAdded:Connect(function(char)
-    repeat
-        wait()
-    until game.Players.LocalPlayer.Character
-    char.ChildAdded:Connect(function(child)
-        if child:IsA("Script") then 
-            wait(0.1)
-            if child:FindFirstChild("LocalScript") then
-                child.LocalScript:FireServer()
-            end
-        end
-    end)
-end)
--- bypass
-for _, con in next, getconnections(workspace.CurrentCamera.Changed) do
-    task.wait()
-    con:Disable()
-end
-for _, con in next, getconnections(workspace.CurrentCamera:GetPropertyChangedSignal("CFrame")) do
-    task.wait()
-    con:Disable()
-end
-
-for _, key in next, getgc(true) do 
-    local function changeKey(instanceType)
-        if pcall(function() return rawget(key, instanceType) end) and typeof(rawget(key, instanceType)) == 'table' and (rawget(key, instanceType))[1] == 'kick' then
-            key.tvk = {
-                'kick',
-                function() 
-                    return game.Workspace:WaitForChild('')
-                end
-            }
-        end
-    end
-    changeKey('indexInstance')
-    changeKey('namecallInstance')
-end
