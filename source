@@ -111,7 +111,6 @@ if not authSuccess then
     -- This handles any unexpected runtime errors
     kickPlayer("Authentication system error: " .. tostring(authError))
 end
-print("Got it")
 -- hookfunction security
     local exe_name, exe_version = identifyexecutor()
     local function home999() end
