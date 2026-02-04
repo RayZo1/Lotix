@@ -42,14 +42,14 @@ getgenv().Underground = {
         ["Enabled"] = (true), -- // Gun Fov / Fov Is Automatically Changed To Specific Gun Equipped
     
 ["Double-Barrel SG"] = {["Fov"] = 22}, -- // Db
-        ["Revolver"] = {["Fov"] = 12}, -- // Rev
-             ["SMG"] = {["Fov"] = 6.2}, -- // Smg
-         ["Shotgun"] = {["Fov"] = 18}, -- // Shotgun
-           ["Rifle"] = {["Fov"] = 6.2}, -- // Rifle
- ["TacticalShotgun"] = {["Fov"] = 20}, -- // Tactical
-        ["Silencer"] = {["Fov"] = 6.2}, -- // Smg
+        ["Revolver"] = {["Fov"] = 15}, -- // Rev
+             ["SMG"] = {["Fov"] = 12}, -- // Smg
+         ["Shotgun"] = {["Fov"] = 22}, -- // Shotgun
+           ["Rifle"] = {["Fov"] = 12}, -- // Rifle
+ ["TacticalShotgun"] = {["Fov"] = 22}, -- // Tactical
+        ["Silencer"] = {["Fov"] = 12}, -- // Smg
             ["AK47"] = {["Fov"] = 12}, -- // Ak47
-              ["AR"] = {["Fov"] = 6.2} -- // Rifle
+              ["AR"] = {["Fov"] = 12} -- // Rifle
         -- // You Can Add Custom Weapons If You Want To :p
     },
     RangeFov = {
