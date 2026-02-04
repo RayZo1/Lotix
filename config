@@ -160,8 +160,8 @@ getgenv().Underground = {
         
         ["Name"] = {["Enabled"] = true, ["OutLine"] = true, ["Color"] = Color3.fromRGB(255, 50, 50)}, -- // Shows Targets Name
         ["Box"] = {["Enabled"] = true, ["OutLine"] = false, ["Color"] = Color3.fromRGB(255, 255, 255)}, -- // Shows Box On Target
-        ["HealthBar"] = {["Enabled"] = false, ["OutLine"] = false, ["Color"] = Color3.fromRGB(0, 255, 0)}, -- // Shows An Health Bar On Target
-        ["HealthText"] = {["Enabled"] = true, ["OutLine"] = true, ["Color"] = Color3.fromRGB(0, 255, 0)}, -- // Shows An Text How Much Hp Target Have
+        ["HealthBar"] = {["Enabled"] = true, ["OutLine"] = false, ["Color"] = Color3.fromRGB(0, 255, 0)}, -- // Shows An Health Bar On Target
+        ["HealthText"] = {["Enabled"] = false, ["OutLine"] = true, ["Color"] = Color3.fromRGB(0, 255, 0)}, -- // Shows An Text How Much Hp Target Have
         ["Distance"] = {["Enabled"] = false, ["OutLine"] = true, ["Color"] = Color3.fromRGB(255, 255, 255)} -- // Shows Targets Distance Between You
     },
 
