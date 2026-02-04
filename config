@@ -9,12 +9,12 @@ getgenv().Underground = {
         ["AirPart"] = ("LowerTorso"), -- // The Parts It Targets On When Player Isnt On The Ground
         ["ClosestPart"] = (true), -- // Automatically Gets The Closest Part Of The Target And Uses That
         ["ClosestPoint"] = (true), -- // Automatically Gets The Closest Point Of The Target Part And Uses That
-        ["ScalePoint"] = (0.99),
+        ["ScalePoint"] = (0.6),
         
         ["HitChance"] = (100), -- // The Chance You Will Hit The Target
         
         ["Humanize"] = (true), -- // Makes Soo The Silent Doesnt Hit The Same Position
-        ["HumanizeValue"] = (2), -- // Makes How Much Power It Changes
+        ["HumanizeValue"] = (1), -- // Makes How Much Power It Changes
         
         ["TriggerBot"] = (false), -- // Shoots AutoMatically
         ["UseTriggerBotKeybind"] = (false), -- // Enable / Disable TriggerBot Keybind
@@ -24,11 +24,11 @@ getgenv().Underground = {
         --["AutoPrediction"] = (false), -- // Automatically Gets An Good Prediction (DISABLE DUE TO REVAMP)
         ["PredictionVelocity"] = (0.16011), -- // How Much It Predicts
         
-        ["AntiGroundShots"] = (false), -- // Makes So You Dont Shoot The Ground
+        ["AntiGroundShots"] = (true), -- // Makes So You Dont Shoot The Ground
         ["AntiGroundValue"] = (1), -- // How Much Velocity It Rmoves From Target
         ["WhenAntiGroundActivate"] = (-20), -- // When Its Gonna Activate
         
-        ["AntiAimViewer"] = (true), -- // Bypasses The Mouse Position For The Server 
+        ["AntiAimViewer"] = (false), -- // Bypasses The Mouse Position For The Server 
 
         ["WallCheck"] = (true), -- // Checks If Theres A Wall
         
@@ -80,7 +80,7 @@ getgenv().Underground = {
         ["HoldMode"] = (false), -- // Enables While Only Holding The Key
         
         ["Part"] = ("UpperTorso"), -- // The Part That Aim Assist Locks On
-        ["ClosestPart"] = (true), -- // Automatically Gets The Closest Part Of The Target And Uses That
+        ["ClosestPart"] = (false), -- // Automatically Gets The Closest Part Of The Target And Uses That
         
         ["DisableTargetDeath"] = (true), -- // Disables When Target Dies
         ["DisableLocalDeath"] = (true), -- // Disables When You Died
@@ -98,7 +98,7 @@ getgenv().Underground = {
         ["WallCheck"] = (true), -- // Checks If Theres A Wall
         
         ["Smoothness_X"] = (0.053251), -- // How Smooth The Aim Assist Is On X
-        ["Smoothness_Y"] = (0.053251) -- // How Smooth The Aim Assist Is On Y
+        ["Smoothness_Y"] = (0.083422) -- // How Smooth The Aim Assist Is On Y
     },
     AimAssistFov = {
         ["Visible"] = (false), -- // If The Circle Is Showing Or Not
@@ -121,7 +121,7 @@ getgenv().Underground = {
         ["UnderGroundKey"] = ("X"), -- // KeyBind To Enable / Disable UnderGround Resolver
         
         ["VisibleCheck"] = (true), -- // Checks If Target Is Visible
-        ["CrewCheck"] = (false), -- // Checks If Target Is In Your Crew
+        ["CrewCheck"] = (true), -- // Checks If Target Is In Your Crew
         ["FriendCheck"] = (false), -- // Checks If Target Is Your Friend
         ["TeamCheck"] = (false), -- // Checks If Player Is In the Same Team
         
@@ -155,13 +155,13 @@ getgenv().Underground = {
     Esp = {
         ["Enabled"] = (false), -- // Enabel / Disable Esp
         ["UseEspKeybind"] = (true), -- // Enable / Disable Esp Keybind
-        ["EspKey"] = ("p"), -- // KeyBind To Enable / Disable Esp
+        ["EspKey"] = ("b"), -- // KeyBind To Enable / Disable Esp
         ["HoldMode"] = (true), -- // Enables While Only Holding The Key
         
         ["Name"] = {["Enabled"] = true, ["OutLine"] = true, ["Color"] = Color3.fromRGB(255, 255, 255)}, -- // Shows Targets Name
-        ["Box"] = {["Enabled"] = true, ["OutLine"] = false, ["Color"] = Color3.fromRGB(255, 255, 255)}, -- // Shows Box On Target
-        ["HealthBar"] = {["Enabled"] = true, ["OutLine"] = false, ["Color"] = Color3.fromRGB(0, 255, 0)}, -- // Shows An Health Bar On Target
-        ["HealthText"] = {["Enabled"] = false, ["OutLine"] = true, ["Color"] = Color3.fromRGB(0, 255, 0)}, -- // Shows An Text How Much Hp Target Have
+        ["Box"] = {["Enabled"] = false, ["OutLine"] = false, ["Color"] = Color3.fromRGB(255, 255, 255)}, -- // Shows Box On Target
+        ["HealthBar"] = {["Enabled"] = false, ["OutLine"] = false, ["Color"] = Color3.fromRGB(0, 255, 0)}, -- // Shows An Health Bar On Target
+        ["HealthText"] = {["Enabled"] = true, ["OutLine"] = true, ["Color"] = Color3.fromRGB(0, 255, 0)}, -- // Shows An Text How Much Hp Target Have
         ["Distance"] = {["Enabled"] = false, ["OutLine"] = true, ["Color"] = Color3.fromRGB(255, 255, 255)} -- // Shows Targets Distance Between You
     },
 
