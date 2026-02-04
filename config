@@ -9,7 +9,7 @@ getgenv().Underground = {
         ["AirPart"] = ("LowerTorso"), -- // The Parts It Targets On When Player Isnt On The Ground
         ["ClosestPart"] = (true), -- // Automatically Gets The Closest Part Of The Target And Uses That
         ["ClosestPoint"] = (true), -- // Automatically Gets The Closest Point Of The Target Part And Uses That
-        ["ScalePoint"] = (0.6),
+        ["ScalePoint"] = (0.999),
         
         ["HitChance"] = (100), -- // The Chance You Will Hit The Target
         
