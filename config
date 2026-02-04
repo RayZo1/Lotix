@@ -13,7 +13,7 @@ getgenv().Underground = {
         
         ["HitChance"] = (100), -- // The Chance You Will Hit The Target
         
-        ["Humanize"] = (true), -- // Makes Soo The Silent Doesnt Hit The Same Position
+        ["Humanize"] = (false), -- // Makes Soo The Silent Doesnt Hit The Same Position
         ["HumanizeValue"] = (1), -- // Makes How Much Power It Changes
         
         ["TriggerBot"] = (false), -- // Shoots AutoMatically
